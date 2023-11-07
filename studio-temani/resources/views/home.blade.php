@@ -1,8 +1,8 @@
 @extends('layouts.main')
 @section('container')
-    <header class="my-3">
-        <div class="bg-cover justify-center">
-            <img src="assets/img/bg-hero.png" alt="">
+    <header class="my-2">
+        <div class="w-screen">
+            <img src="assets/img/bg-hero.png" alt="Studio Temani">
         </div>
     </header>
 @endsection
