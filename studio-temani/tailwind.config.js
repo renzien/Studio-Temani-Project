@@ -9,6 +9,9 @@ export default {
     extend: {
       fontFamily: {
         'quicksand': ['Quicksand', 'sans-serif']
+      },
+      colors: {
+        'studio-temani': '#242520',
       }
     },
   },

@@ -1,18 +1,65 @@
 @extends('layouts.main')
 @section('container')
-    <header>
-        <div class="h-screen">
-            <img src="assets/img/bg-hero.png" alt="Studio Temani" class="absolute">
-            <div class="flex flex-col font-quicksand ml-36 justify-center h-screen relative text-white">
-                <div class="mt-52">
-                    <p class="font-normal text-2xl leading-normal">Studio Temani</p>
-                    <p class="font-bold text-4xl leading-normal">Welcome to your favorite Photo Studio!</p>
-                </div>
-            </div>
-            <div class="flex flex-col font-quicksand relative justify-center items-center text-white">
-                <p class="font-normal text-lg">Scroll Down</p>
-                <i class="ri-arrow-drop-down-line mt-8"></i>
+    <header class="h-screen" style="background-image: url('assets/img/bg-hero.png'); background-position: center; background-repeat: no-repeat; background-size: cover;">
+        <div class="flex flex-col pl-44 justify-center h-4/5 text-white">
+            <div class="mt-48">
+                <h1 class="text-2xl font-quicksand">Studio Temani</h1>
+                <h1 class="font-bold text-4xl font-quicksand">Welcome to your favorite Photo Studio!</h1>
             </div>
         </div>
+        <div class="flex flex-col relative items-center justify-center text-white font-quicksand mt-3">
+            <a href="#about-us">Scroll Down</a>
+            <i class="ri-arrow-down-s-line mt-5"></i>
+        </div>
     </header>
+    <section class="grid grid-cols-2">
+        <div id="about-us">
+            <h1 class="font-quicksand mt-24 ml-20 text-4xl font-bold leading-normal">About Us</h1>
+            <p class="font-quicksand mt-8 ml-20 mr-28">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Quis, eius! Totam impedit dicta natus earum maxime non pariatur vero tempore velit 
+                repellat rem aliquam et eum eius sed, asperiores commodi?. Lorem ipsum dolor sit amet, 
+                consectetur adipisicing elit. Dolor unde nisi adipisci eligendi aliquam aspernatur cumque 
+                odio delectus ab magnam, sed facilis similique suscipit temporibus alias voluptas, error 
+                commodi aliquid!</p>
+
+            <p class="font-quicksand mt-8 ml-20 mr-28 pb-32">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Quis, eius! Totam impedit dicta natus earum maxime non pariatur vero tempore velit 
+                repellat rem aliquam et eum eius sed, asperiores commodi?. Lorem ipsum dolor sit amet, 
+                consectetur adipisicing elit. Dolor unde nisi adipisci eligendi aliquam aspernatur cumque 
+                odio delectus ab magnam, sed facilis similique suscipit temporibus alias voluptas, error 
+                commodi aliquid!</p>
+        </div>
+        <div class="bg-studio-temani">
+            <div class="flex items-center justify-center mt-24 mb-20">
+                <img src="assets/img/rectangle-3.png" alt="Studio Temani About">
+            </div>
+        </div>
+    </section>
+    <section class="grid grid-cols-2">
+        <div class="bg-studio-temani">
+            <div class="flex items-center justify-center mt-24 mb-20">
+                <img src="assets/img/rectangle-4.png" alt="Studio Temani Studio">
+            </div>
+        </div>
+        <div class="studio">
+            <h1 class="font-quicksand mt-24 ml-20 text-4xl font-bold leading-normal">Studio</h1>
+            <p class="font-quicksand mt-8 ml-20 mr-28">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Aliquam commodo varius erat vitae hendrerit. Morbi 
+                rhoncus augue a nisi fermentum, vel aliquam felis blandit. 
+                Nulla facilisi. Nullam semper justo id gravida tincidunt. Duis 
+                facilisis convallis dolor a mattis. Integer magna felis, commodo 
+                non mi ut, auctor varius nibh. Phasellus iaculis facilisis dolor ac 
+                ornare.</p>
+            <p class="font-quicksand mt-8 ml-20 mr-28">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Aliquam commodo varius erat vitae hendrerit. Morbi 
+                rhoncus augue a nisi fermentum, vel aliquam felis blandit. 
+                Nulla facilisi. Nullam semper justo id gravida tincidunt. Duis 
+                facilisis convallis dolor a mattis. Integer magna felis, commodo 
+                non mi ut, auctor varius nibh. Phasellus iaculis facilisis dolor ac 
+                ornare.</p>
+            <div class="py-28 px-20">
+                <button class="bg-black hover:bg-gray-700 text-white font-quicksand font-bold py-2 px-4 mr-5 rounded-lg">Read More</button>
+            </div>
+        </div>
+    </section>
 @endsection
