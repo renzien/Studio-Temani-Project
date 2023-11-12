@@ -58,8 +58,25 @@
                 non mi ut, auctor varius nibh. Phasellus iaculis facilisis dolor ac 
                 ornare.</p>
             <div class="py-28 px-20">
-                <button class="bg-black hover:bg-gray-700 text-white font-quicksand font-bold py-2 px-4 mr-5 rounded-lg">Read More</button>
+                <button class="bg-black hover:bg-gray-900 text-white font-quicksand font-bold py-2 px-4 mr-5 rounded-lg">Read More</button>
             </div>
+        </div>
+    </section>
+    <section class="h-screen" style="background-image: url('assets/img/rectangle-6.png'); background-repeat: no-repeat;">
+        <div class="flex flex-col items-center h-4/5 text-white font-quicksand">
+            <h1 class="text-4xl font-bold mt-24 leading-normal">Pricelist</h1>
+            <div class="text-center justify-center m-28 ">
+                <p class="text-xl leading-normal">Capture your special moments with Studio Temani and cherish them forever. Our Pricelist Rates are designed
+                    to provide you with a tailored photography experience, ensuring that every occasion is remembered with joy.
+                    Here are our pricelist rates for various studio facilities.</h1>
+            </div>
+            <button class="bg-white hover:bg-gray-100 text-black font-quicksand font-bold py-2 px-4 rounded-lg">Check This Out</button>
+        </div>
+    </section>
+    <section class="contact font-quicksand">
+        <div class="flex flex-col pl-28 justify-center h-4/5 text-black">
+            <h1 class="font-bold text-4xl mt-4 leading normal">Contact Us!</h1>
+            <h1 class="text-2xl leading normal">For more information</h1>
         </div>
     </section>
 @endsection

@@ -12,9 +12,10 @@ export default {
       },
       colors: {
         'studio-temani': '#242520',
+        'contact-us': '#303030',
       }
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar")],
 }
 
