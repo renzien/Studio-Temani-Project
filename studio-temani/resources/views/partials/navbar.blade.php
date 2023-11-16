@@ -12,6 +12,6 @@
             <a href="#" class="text-black font-bold hover:text-gray-600">Contact</a>
         </div>
 
-        <a href=""><button class="bg-black hover:bg-gray-900 text-white font-quicksand font-bold py-2 px-4 mr-5 rounded-lg">Booking Now</button></a>
+        <a href="/book"><button class="bg-black hover:bg-gray-900 text-white font-quicksand font-bold py-2 px-4 mr-5 rounded-lg">Booking Now</button></a>
     </div>
 </nav>
