@@ -13,4 +13,12 @@
             <i class="ri-arrow-down-s-line mt-5"></i>
         </div>
     </header>
+    <section class="font-quicksand">
+        <div class="flex items-center justify-center">
+            <h1 class=" leading-normal">Choose Your Packages</h1>
+        </div>
+        <div class="">
+            
+        </div>
+    </section>
 @endsection

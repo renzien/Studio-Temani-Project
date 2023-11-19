@@ -30,3 +30,7 @@ Route::get('/book', function() {
         "title" => "Booking Now"
     ]);
 });
+
+Route::get('/admin', function() {
+    return view ('admin.admin');
+});

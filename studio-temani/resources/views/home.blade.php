@@ -103,7 +103,7 @@
                 </div>
             </form>
         </div>
-        {{-- <div class="justify-items-center self-center">
+        {{-- <div class="justify-items-center self-center w-4/6">
             <div class="flex flex-col items-center bg-white shadow-lg p-10">
                 <img src="assets/img/logo-update.png" alt="Studio Temani" class="w-2/5">
             </div>
