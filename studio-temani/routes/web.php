@@ -32,5 +32,7 @@ Route::get('/book', function() {
 });
 
 Route::get('/admin', function() {
-    return view ('admin.admin');
+    return view ('admin.admin', [
+        "title" => "Dashboard Admin"
+    ]);
 });

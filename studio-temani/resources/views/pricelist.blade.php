@@ -6,10 +6,10 @@
                 <img src="assets/img/logo-update.png" alt="Studio Temani" class="w-2/5">
             </div>
             <div class="flex items-center justify-center">
-                <h1 class="font-bold text-2xl leading-normal mt-8">Check Out Our Pricelist</h1>
+                <h1 class="font-bold text-2xl leading-normal mt-8 text-black">Check Out Our Pricelist</h1>
             </div>
             <div class="flex items-center justify-center text-center mt-14 ml-28 mr-28">
-                <p class="font-base text-base leading-normal">Discover the perfect package to capture your special
+                <p class="font-base text-lg leading-normal text-black">Discover the perfect package to capture your special
                     moments with Studio Temani.Our price list is designed
                     to cater to various photography needs, ensuring that you
                     receive exceptional services at competitive rates.</p>
@@ -31,9 +31,9 @@
             <button class="bg-white hover:bg-gray-100 text-black font-quicksand font-bold py-2 px-4 rounded-lg">Contact Us</button>
         </div>
     </section>
-    <section class="grid grid-cols-2">
+    {{-- <section class="grid grid-cols-2">
         <div class="font-quicksand flex items-center justify-center">
             <h1 class="font-3xl font-bold ">Family Photo Session</h1>
         </div>
-    </section>
+    </section> --}}
 @endsection
