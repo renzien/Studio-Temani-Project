@@ -37,5 +37,9 @@
 
     {{-- App --}}
     <script src="assets/js/app.js"></script>
+
+    {{-- Apexchart --}}
+    <script src="assets/js/apexcharts/apexcharts.min.js"></script>
+    <script src="assets/js/dashboard.js"></script>
 </body>
 </html>

@@ -15,9 +15,9 @@
                   </div>
                   <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
                     <h6 class="text-muted font-semibold">
-                      Profile Views
+                      Website Views
                     </h6>
-                    <h6 class="font-extrabold mb-0">100.000</h6>
+                    <h6 class="font-extrabold mb-0">50.000</h6>
                   </div>
                 </div>
               </div>
@@ -47,7 +47,7 @@
           <div class="col-12">
             <div class="card">
               <div class="card-header">
-                <h4>Profile Visit</h4>
+                <h4>Profil Kunjungan</h4>
               </div>
               <div class="card-body">
                 <div id="chart-profile-visit"></div>
@@ -59,7 +59,7 @@
           <div class="col-12 col-xl-4">
             <div class="card">
               <div class="card-header">
-                <h4>Profile Visit</h4>
+                <h4>Profil Kunjungan</h4>
               </div>
               <div class="card-body">
                 <div class="row">
@@ -73,7 +73,7 @@
                         style="width: 10px"
                       >
                         <use
-                          xlink:href="assets/static/images/bootstrap-icons.svg#circle-fill"
+                          xlink:href="assets/img/svg/bootstrap-icons.svg#circle-fill"
                         />
                       </svg>
                       <h5 class="mb-0 ms-3">Europe</h5>
@@ -97,7 +97,7 @@
                         style="width: 10px"
                       >
                         <use
-                          xlink:href="assets/static/images/bootstrap-icons.svg#circle-fill"
+                          xlink:href="assets/img/svg/bootstrap-icons.svg#circle-fill"
                         />
                       </svg>
                       <h5 class="mb-0 ms-3">America</h5>
@@ -121,7 +121,7 @@
                         style="width: 10px"
                       >
                         <use
-                          xlink:href="assets/static/images/bootstrap-icons.svg#circle-fill"
+                          xlink:href="assets/img/svg/bootstrap-icons.svg#circle-fill"
                         />
                       </svg>
                       <h5 class="mb-0 ms-3">Indonesia</h5>
@@ -140,15 +140,15 @@
           <div class="col-12 col-xl-8">
             <div class="card">
               <div class="card-header">
-                <h4>Latest Comments</h4>
+                <h4>Notifikasi Terakhir</h4>
               </div>
               <div class="card-body">
                 <div class="table-responsive">
                   <table class="table table-hover table-lg">
                     <thead>
                       <tr>
-                        <th>Name</th>
-                        <th>Comment</th>
+                        <th>Nama</th>
+                        <th>Pemberitahuan</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -156,14 +156,14 @@
                         <td class="col-3">
                           <div class="d-flex align-items-center">
                             <div class="avatar avatar-md">
-                              <img src="./assets/compiled/jpg/5.jpg" />
+                              <img src="assets/img/avatar/4.jpg" />
                             </div>
-                            <p class="font-bold ms-3 mb-0">Si Cantik</p>
+                            <p class="font-bold ms-3 mb-0">Ahmad Afif Wildan</p>
                           </div>
                         </td>
                         <td class="col-auto">
                           <p class="mb-0">
-                            Congratulations on your graduation!
+                            Baru saja melakukan Booking Self Photo Studio!
                           </p>
                         </td>
                       </tr>
@@ -171,15 +171,29 @@
                         <td class="col-3">
                           <div class="d-flex align-items-center">
                             <div class="avatar avatar-md">
-                              <img src="./assets/compiled/jpg/2.jpg" />
+                              <img src="assets/img/avatar/7.jpg" />
                             </div>
-                            <p class="font-bold ms-3 mb-0">Si Ganteng</p>
+                            <p class="font-bold ms-3 mb-0">Raihan Febriansyah</p>
                           </div>
                         </td>
                         <td class="col-auto">
                           <p class="mb-0">
-                            Wow amazing design! Can you make another
-                            tutorial for this design?
+                            Baru saja melakukan Booking Family Photo Studio!
+                          </p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="col-3">
+                          <div class="d-flex align-items-center">
+                            <div class="avatar avatar-md">
+                              <img src="assets/img/avatar/8.jpg" />
+                            </div>
+                            <p class="font-bold ms-3 mb-0">Ajib Syah Abad</p>
+                          </div>
+                        </td>
+                        <td class="col-auto">
+                          <p class="mb-0">
+                            Baru saja melakukan Booking Creative Photo Studio!
                           </p>
                         </td>
                       </tr>
@@ -196,62 +210,81 @@
           <div class="card-body py-4 px-4">
             <div class="d-flex align-items-center">
               <div class="avatar avatar-xl">
-                <img src="./assets/compiled/jpg/1.jpg" alt="Face 1" />
+                <img src="assets/img/avatar/2.jpg" alt="Face 2" />
               </div>
               <div class="ms-3 name">
-                <h5 class="font-bold">John Duck</h5>
-                <h6 class="text-muted mb-0">@johnducky</h6>
+                <h5 class="font-bold">Alif Rizki</h5>
+                <h6 class="text-muted mb-0">@renzien</h6>
               </div>
             </div>
           </div>
         </div>
         <div class="card">
           <div class="card-header">
-            <h4>Recent Messages</h4>
+            <h4>Booking Profile</h4>
           </div>
           <div class="card-content pb-4">
             <div class="recent-message d-flex px-4 py-3">
               <div class="avatar avatar-lg">
-                <img src="./assets/compiled/jpg/4.jpg" />
+                <img src="assets/img/avatar/4.jpg" />
               </div>
               <div class="name ms-4">
-                <h5 class="mb-1">Hank Schrader</h5>
-                <h6 class="text-muted mb-0">@johnducky</h6>
+                <h5 class="mb-1">Ahmad Afif Wildan</h5>
+                <h6 class="text-muted mb-0">@KangMpip</h6>
               </div>
             </div>
             <div class="recent-message d-flex px-4 py-3">
               <div class="avatar avatar-lg">
-                <img src="./assets/compiled/jpg/5.jpg" />
+                <img src="assets/img/avatar/7.jpg" />
               </div>
               <div class="name ms-4">
-                <h5 class="mb-1">Dean Winchester</h5>
-                <h6 class="text-muted mb-0">@imdean</h6>
+                <h5 class="mb-1">Raihan Febriansyah</h5>
+                <h6 class="text-muted mb-0">@reinkuru</h6>
               </div>
             </div>
             <div class="recent-message d-flex px-4 py-3">
               <div class="avatar avatar-lg">
-                <img src="./assets/compiled/jpg/1.jpg" />
+                <img src="assets/img/avatar/8.jpg" />
               </div>
               <div class="name ms-4">
-                <h5 class="mb-1">John Dodol</h5>
-                <h6 class="text-muted mb-0">@dodoljohn</h6>
+                <h5 class="mb-1">Ajib Syah Abad</h5>
+                <h6 class="text-muted mb-0">@araara</h6>
+              </div>
+            </div>
+            <div class="recent-message d-flex px-4 py-3">
+              <div class="avatar avatar-lg">
+                <img src="assets/img/avatar/6.jpg" />
+              </div>
+              <div class="name ms-4">
+                <h5 class="mb-1">Ahmad Nawawi</h5>
+                <h6 class="text-muted mb-0">@nuclear</h6>
+              </div>
+            </div>
+            <div class="recent-message d-flex px-4 py-3">
+              <div class="avatar avatar-lg">
+                <img src="assets/img/avatar/4.jpg" />
+              </div>
+              <div class="name ms-4">
+                <h5 class="mb-1">Adhit Fatwa</h5>
+                <h6 class="text-muted mb-0">@adhit_01</h6>
+              </div>
+            </div>
+            <div class="recent-message d-flex px-4 py-3">
+              <div class="avatar avatar-lg">
+                <img src="assets/img/avatar/3.jpg" />
+              </div>
+              <div class="name ms-4">
+                <h5 class="mb-1">Diva Adellia Sya'bani</h5>
+                <h6 class="text-muted mb-0">@kuroUzu</h6>
               </div>
             </div>
             <div class="px-4">
               <button
                 class="btn btn-block btn-xl btn-outline-primary font-bold mt-3"
               >
-                Start Conversation
+                View Booking Profile
               </button>
             </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header">
-            <h4>Visitors Profile</h4>
-          </div>
-          <div class="card-body">
-            <div id="chart-visitors-profile"></div>
           </div>
         </div>
       </div>

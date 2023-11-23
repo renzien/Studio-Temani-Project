@@ -36,3 +36,9 @@ Route::get('/admin', function() {
         "title" => "Dashboard Admin"
     ]);
 });
+
+Route::get('/login', function() {
+    return view ('admin.login', [
+        "title" => "Login Admin"
+    ]);
+});

@@ -144,7 +144,7 @@
 
             <ul class="submenu">
               <li class="submenu-item">
-                <a href="auth-login.html" class="submenu-link">Masuk</a>
+                <a href="/login" class="submenu-link">Masuk</a>
               </li>
 
               <li class="submenu-item">
