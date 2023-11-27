@@ -19,5 +19,5 @@
 </head>
 <body>
     <script src="assets/static/js/initTheme.js"></script>
-    @include('admin.layouts.auth')
+    @include('admin.layouts.reg')
 </body>

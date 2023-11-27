@@ -83,6 +83,33 @@
 
           <li class="sidebar-item has-sub">
             <a href="#" class="sidebar-link">
+              <i class="ri-edit-line"></i>
+              <span>Posting</span>
+            </a>
+
+            <ul class="submenu">
+              <li class="submenu-item">
+                <a href="component-accordion.html" class="submenu-link"
+                  >Home</a
+                >
+              </li>
+
+              <li class="submenu-item">
+                <a href="component-alert.html" class="submenu-link"
+                  >Studio</a
+                >
+              </li>
+
+              <li class="submenu-item">
+                <a href="component-badge.html" class="submenu-link"
+                  >Pricelist</a
+                >
+              </li>
+            </ul>
+          </li>
+
+          <li class="sidebar-item has-sub">
+            <a href="#" class="sidebar-link">
                 <i class="ri-stack-line"></i>
               <span>Katalog</span>
             </a>
@@ -154,7 +181,7 @@
               </li>
 
               <li class="submenu-item">
-                <a href="auth-forgot-password.html" class="submenu-link"
+                <a href="/forgot" class="submenu-link"
                   >Lupa Password</a
                 >
               </li>

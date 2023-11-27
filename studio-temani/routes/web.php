@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Auth;
+use App\Http\Controllers\Book;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -25,11 +27,7 @@ Route::get('/pricelist', function() {
     ]);
 });
 
-Route::get('/book', function() {
-    return view('book' , [
-        "title" => "Booking Now"
-    ]);
-});
+Route::get('/book', [Book::class, 'book']);
 
 Route::get('/admin', function() {
     return view ('admin.admin', [
@@ -37,8 +35,6 @@ Route::get('/admin', function() {
     ]);
 });
 
-Route::get('/login', function() {
-    return view ('admin.login', [
-        "title" => "Login Admin"
-    ]);
-});
+Route::get('/login', [Auth::class, 'index']);
+Route::get('/register', [Auth::class, 'register']);
+Route::get('/forgot', [Auth::class, 'forgot']);
