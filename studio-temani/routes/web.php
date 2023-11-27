@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Auth;
 use App\Http\Controllers\Book;
+use App\Http\Controllers\Studio;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,11 +22,8 @@ Route::get('/', function () {
     ]);
 });
 
-Route::get('/pricelist', function() {
-    return view('pricelist', [
-       "title" => "Pricelist" 
-    ]);
-});
+Route::get('/studio', [Studio::class, 'studio']);
+Route::get('/pricelist', [Studio::class, 'pricelist']);
 
 Route::get('/book', [Book::class, 'book']);
 
