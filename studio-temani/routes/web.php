@@ -1,8 +1,9 @@
 <?php
 
-use App\Http\Controllers\Auth;
+use App\Http\Controllers\LoginController;
 use App\Http\Controllers\Book;
 use App\Http\Controllers\Studio;
+use App\Http\Controllers\Dashboard;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -27,12 +28,13 @@ Route::get('/pricelist', [Studio::class, 'pricelist']);
 
 Route::get('/book', [Book::class, 'book']);
 
-Route::get('/admin', function() {
-    return view ('admin.admin', [
-        "title" => "Dashboard Admin"
-    ]);
-});
+Route::get('/admin', [Dashboard::class, 'index'])->middleware('auth');
+Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
 
-Route::get('/login', [Auth::class, 'index']);
-Route::get('/register', [Auth::class, 'register']);
-Route::get('/forgot', [Auth::class, 'forgot']);
+Route::get('/login', [LoginController::class, 'index'])->name('login');
+Route::post('/login', [LoginController::class, 'process'])->name('process');
+
+Route::get('/register', [LoginController::class, 'register']);
+Route::post('/register', [LoginController::class, 'registerProcess'])->name('register');
+
+Route::get('/forgot', [LoginController::class, 'forgot']);

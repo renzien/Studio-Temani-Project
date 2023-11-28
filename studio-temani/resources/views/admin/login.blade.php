@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{{ $title }} - Studio Temani Official</title>
-
+    <title>@yield('title') - Studio Temani Official</title>
     {{-- Favicon --}}
     <link rel="shortcut icon" href="assets/img/svg/favicon.svg" type="image/x-icon">
     
@@ -18,6 +17,7 @@
     <link rel="stylesheet" href="assets/css/auth.css">
 </head>
 <body>
+    @yield('login')
     <script src="assets/static/js/initTheme.js"></script>
-    @include('admin.layouts.auth')
 </body>
+</html>

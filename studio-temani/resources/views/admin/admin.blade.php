@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{{ $title }} - Studio Temani Official</title>
+    <title>@yield('title') - Studio Temani Official</title>
 
     {{-- Favicon --}}
     <link rel="shortcut icon" href="assets/img/svg/favicon.svg" type="image/x-icon">
@@ -30,7 +30,7 @@
         <div class="page-heading">
           <h3>Profile Statistics</h3>
         </div>
-        @include('admin.layouts.content')
+        @yield('contentdash')
     </div>
     <script src="assets/js/component/dark.js"></script>
     <script src="assets/js/perfect-scrollbar/perfect-scrollbar.min.js"></script>

@@ -163,29 +163,11 @@
             </a>
           </li>
 
-          <li class="sidebar-item has-sub">
-            <a href="#" class="sidebar-link">
-              <i class="ri-lock-2-line"></i>
-              <span>Autentikasi</span>
+          <li class="sidebar-item">
+            <a href="{{ route('logout') }}" class="sidebar-link">
+              <i class="ri-logout-box-line"></i>
+              <span>Logout</span>
             </a>
-
-            <ul class="submenu">
-              <li class="submenu-item">
-                <a href="/login" class="submenu-link">Masuk</a>
-              </li>
-
-              <li class="submenu-item">
-                <a href="auth-register.html" class="submenu-link"
-                  >Daftar</a
-                >
-              </li>
-
-              <li class="submenu-item">
-                <a href="/forgot" class="submenu-link"
-                  >Lupa Password</a
-                >
-              </li>
-            </ul>
           </li>
         </ul>
       </div>
