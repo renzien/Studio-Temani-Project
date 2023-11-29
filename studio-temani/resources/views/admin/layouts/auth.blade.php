@@ -55,9 +55,6 @@
                             Belum punya akun ?
                             <a href="/register" class="font-bold">Daftar Disini</a>.
                         </p>
-                        <p>
-                            <a class="font-bold" href="/forgot">Lupa Password ?</a>
-                        </p>
                     </div>
                 </div>
             </div>

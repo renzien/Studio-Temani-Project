@@ -4,6 +4,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\Book;
 use App\Http\Controllers\Studio;
 use App\Http\Controllers\Dashboard;
+use App\Http\Controllers\Posting;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,18 +24,22 @@ Route::get('/', function () {
     ]);
 });
 
+// Studio
 Route::get('/studio', [Studio::class, 'studio']);
 Route::get('/pricelist', [Studio::class, 'pricelist']);
 
+// Booking
 Route::get('/book', [Book::class, 'book']);
 
+// Auth
 Route::get('/admin', [Dashboard::class, 'index'])->middleware('auth');
 Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
-
 Route::get('/login', [LoginController::class, 'index'])->name('login');
 Route::post('/login', [LoginController::class, 'process'])->name('process');
-
 Route::get('/register', [LoginController::class, 'register']);
 Route::post('/register', [LoginController::class, 'registerProcess'])->name('register');
 
-Route::get('/forgot', [LoginController::class, 'forgot']);
+// Home Posting
+Route::get('/adminhome', [Posting::class, 'posting']);
+
+// Route::get('/forgot', [LoginController::class, 'forgot']);

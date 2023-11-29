@@ -6,7 +6,6 @@
 
         <div class="flex items-center gap-8 font-quicksand">
             <a class="text-black font-bold hover:text-gray-600 {{ ($title === "Home") ? 'active' : '' }}" href="/">Home</a>
-            <a class="text-black font-bold hover:text-gray-600" href="#">About</a>
             <a class="text-black font-bold hover:text-gray-600 {{ ($title === "Studio") ? 'active' : '' }}" href="/studio">Studio</a>
             <a class="text-black font-bold hover:text-gray-600 {{ ($title === "Pricelist") ? 'active' : '' }}" href="/pricelist">Pricelist</a>
             <a href="#" class="text-black font-bold hover:text-gray-600">Contact</a>

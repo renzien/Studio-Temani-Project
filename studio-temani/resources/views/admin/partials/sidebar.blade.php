@@ -74,14 +74,14 @@
         <ul class="menu">
           <li class="sidebar-title">Menu</li>
 
-          <li class="sidebar-item active">
+          <li class="sidebar-item {{ request()->is('admin') ? 'active' : ''}}">
             <a href="/admin" class="sidebar-link">
                 <i class="ri-dashboard-fill"></i>
               <span>Halaman Utama</span>
             </a>
           </li>
 
-          <li class="sidebar-item has-sub">
+          <li class="sidebar-item has-sub {{ request()->is('adminhome') ? 'active' : ''}}">
             <a href="#" class="sidebar-link">
               <i class="ri-edit-line"></i>
               <span>Posting</span>
@@ -89,7 +89,7 @@
 
             <ul class="submenu">
               <li class="submenu-item">
-                <a href="component-accordion.html" class="submenu-link"
+                <a href="/adminhome" class="submenu-link"
                   >Home</a
                 >
               </li>
