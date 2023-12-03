@@ -108,7 +108,7 @@
             </ul>
           </li>
 
-          <li class="sidebar-item has-sub">
+          <li class="sidebar-item has-sub {{ request()->is(['selfphoto', 'familyphoto', 'creativestudio']) ? 'active' : ''}}">
             <a href="#" class="sidebar-link">
                 <i class="ri-stack-line"></i>
               <span>Katalog</span>
@@ -116,26 +116,26 @@
 
             <ul class="submenu">
               <li class="submenu-item">
-                <a href="component-accordion.html" class="submenu-link"
+                <a href="/selfphoto" class="submenu-link"
                   >Self-Photo</a
                 >
               </li>
 
               <li class="submenu-item">
-                <a href="component-alert.html" class="submenu-link"
+                <a href="/familyphoto" class="submenu-link"
                   >Family Photo</a
                 >
               </li>
 
               <li class="submenu-item">
-                <a href="component-badge.html" class="submenu-link"
+                <a href="/creativestudio" class="submenu-link"
                   >Creative Studio</a
                 >
               </li>
             </ul>
           </li>
 
-          <li class="sidebar-item has-sub">
+          <li class="sidebar-item has-sub {{ request()->is(['editaccount', 'configacc']) ? 'active' : ''}}">
             <a href="#" class="sidebar-link">
               <i class="ri-user-3-line"></i>
               <span>Profile</span>
@@ -143,13 +143,13 @@
 
             <ul class="submenu">
               <li class="submenu-item">
-                <a href="component-accordion.html" class="submenu-link"
+                <a href="/editaccount" class="submenu-link"
                   >Edit Profile</a
                 >
               </li>
 
               <li class="submenu-item">
-                <a href="component-alert.html" class="submenu-link"
+                <a href="/configacc" class="submenu-link"
                   >Konfigurasi Akun</a
                 >
               </li>

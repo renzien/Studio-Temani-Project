@@ -36,21 +36,6 @@
                             <textarea name="" id="default" cols="30" rows="10"></textarea>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card-header">
-                            <h5 class="card-title">Update Hero Background</h5>
-                        </div>
-                        <div class="card-content">
-                            <div class="card-body">
-                                <p class="card-text">
-                                    Masukkan foto dengan ukuran 1920x1080. Agar tampilan lebih baik,
-                                    gunakan foto dengan format .png
-                                </p>
-                                <!-- File uploader with image preview -->
-                                <input type="file" class="image-preview-filepond" />
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
@@ -74,7 +59,28 @@
                     </div>
                     <div class="card">
                         <div class="card-header">
-                            <h4 class="card-title">Edit Isi About</h4>
+                            <h4 class="card-title">Edit Isi Text About</h4>
+                        </div>
+                        <div class="card-body">
+                            <textarea name="" id="default" cols="30" rows="10"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="col-12 col-md-6 order-md-1 order-last">
+            <h3>Edit Pricelist Info</h3>
+            <p class="text-subtitle text-muted">
+                Gunakan posting editor ini untuk melakukan editing
+                info tentang pricelist yang telah disediakan.
+            </p>
+        </div>
+        <section class="section">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">Edit Judul Pricelist</h4>
                         </div>
                         <div class="card-body">
                             <textarea name="" id="default" cols="30" rows="10"></textarea>
@@ -82,16 +88,38 @@
                     </div>
                     <div class="card">
                         <div class="card-header">
-                            <h5 class="card-title">Update Hero Background</h5>
+                            <h4 class="card-title">Edit Isi Text Pricelist</h4>
+                        </div>
+                        <div class="card-body">
+                            <textarea name="" id="default" cols="30" rows="10"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="col-12 col-md-6 order-md-1 order-last">
+            <h3>Upload Foto</h3>
+            <p class="text-subtitle text-muted">
+                Silahkan masukan foto dengan rename sesuai dengan yang dibutuhkan.
+            </p>
+        </div>
+        <section class="section">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="card-title">Multiple Foto Uploader</h5>
                         </div>
                         <div class="card-content">
                             <div class="card-body">
                                 <p class="card-text">
-                                    Masukkan foto dengan ukuran 1920x1080. Agar tampilan lebih baik,
-                                    gunakan foto dengan format .png
+                                    <b>Format: </b> <br>
+                                    <b>1. </b> Foto Home: <b>hero.jpg/.png</b> <br>
+                                    <b>2. </b> Foto About: <b>about.jpg/.png</b> <br>
+                                    <b>3. </b> Foto Pricelist: <b>pricelist.jpg/.png</b> <br>
                                 </p>
-                                <!-- File uploader with image preview -->
-                                <input type="file" class="image-preview-filepond" />
+                                <!-- File uploader with multiple files upload -->
+                                <input type="file" class="multiple-files-filepond" multiple />
                             </div>
                         </div>
                     </div>
