@@ -156,8 +156,8 @@
             </ul>
           </li>
 
-          <li class="sidebar-item">
-            <a href="#" class="sidebar-link">
+          <li class="sidebar-item {{ request()->is(['tagihan']) ? 'active' : ''}}">
+            <a href="/tagihan" class="sidebar-link">
                 <i class="ri-bill-line"></i>
               <span>Tagihan</span>
             </a>

@@ -1,5 +1,5 @@
 @extends('admin.admin')
-@section('title', 'Dashboard')
+@section('title', 'Halaman Utama')
 @section('contentdash')
 <div class="page-content">
     <section class="row">

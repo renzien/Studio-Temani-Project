@@ -7,6 +7,7 @@ use App\Http\Controllers\Dashboard;
 use App\Http\Controllers\Posting;
 use App\Http\Controllers\Katalog;
 use App\Http\Controllers\Account;
+use App\Http\Controllers\Tagihan;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -52,3 +53,6 @@ Route::get('/creativestudio', [Katalog::class, 'creativestudio']);
 // Account
 Route::get('/editaccount', [Account::class, 'account']);
 Route::get('/configacc', [Account::class, 'configacc']);
+
+// Tagihan
+Route::get('/tagihan', [Tagihan::class, 'tagihan']);
