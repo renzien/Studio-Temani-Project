@@ -1,11 +1,12 @@
 @extends('layouts.main')
+@section('title', 'Home')
 @section('container')
     <header class="h-screen"
         style="background-image: url('assets/img/bg-hero.png'); background-position: center; background-repeat: no-repeat; background-size: cover;">
         <div class="flex flex-col pl-44 justify-center h-4/5 text-white">
             <div class="mt-48">
-                <h1 class="text-2xl font-quicksand">Studio Temani</h1>
-                <h1 class="font-bold text-4xl font-quicksand">Welcome to your favorite Photo Studio!</h1>
+                <h1 class="text-2xl font-quicksand">{{ $homes->title }}</h1>
+                <h1 class="font-bold text-4xl font-quicksand">{!! $homes->tagline !!}</h1>
             </div>
         </div>
         <div class="flex flex-col relative items-center justify-center text-white font-quicksand mt-3">
@@ -15,20 +16,9 @@
     </header>
     <section class="grid grid-cols-2">
         <div id="about-us" class="text-black">
-            <h1 class="font-quicksand mt-24 ml-20 text-4xl font-bold leading-normal">About Us</h1>
+            <h1 class="font-quicksand mt-24 ml-20 text-4xl font-bold leading-normal">{{ $abouts->title }}</h1>
             <div class="text-lg">
-                <p class="font-quicksand mt-8 ml-20 mr-28">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Quis, eius! Totam impedit dicta natus earum maxime non pariatur vero tempore velit
-                    repellat rem aliquam et eum eius sed, asperiores commodi?. Lorem ipsum dolor sit amet,
-                    consectetur adipisicing elit. Dolor unde nisi adipisci eligendi aliquam aspernatur cumque
-                    odio delectus ab magnam, sed facilis similique suscipit temporibus alias voluptas, error
-                    commodi aliquid!</p>
-                <p class="font-quicksand mt-8 ml-20 mr-28 pb-32">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Quis, eius! Totam impedit dicta natus earum maxime non pariatur vero tempore velit
-                    repellat rem aliquam et eum eius sed, asperiores commodi?. Lorem ipsum dolor sit amet,
-                    consectetur adipisicing elit. Dolor unde nisi adipisci eligendi aliquam aspernatur cumque
-                    odio delectus ab magnam, sed facilis similique suscipit temporibus alias voluptas, error
-                    commodi aliquid!</p>
+                <p class="font-quicksand mt-8 ml-20 mr-28">{{ $abouts->desc }}</p>
             </div>
         </div>
         <div class="bg-studio-temani">
@@ -46,13 +36,6 @@
         <div class="studio text-black">
             <h1 class="font-quicksand mt-24 ml-20 text-4xl font-bold leading-normal">Studio</h1>
             <div class="text-lg">
-                <p class="font-quicksand mt-8 ml-20 mr-28">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Aliquam commodo varius erat vitae hendrerit. Morbi
-                    rhoncus augue a nisi fermentum, vel aliquam felis blandit.
-                    Nulla facilisi. Nullam semper justo id gravida tincidunt. Duis
-                    facilisis convallis dolor a mattis. Integer magna felis, commodo
-                    non mi ut, auctor varius nibh. Phasellus iaculis facilisis dolor ac
-                    ornare.</p>
                 <p class="font-quicksand mt-8 ml-20 mr-28">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Aliquam commodo varius erat vitae hendrerit. Morbi
                     rhoncus augue a nisi fermentum, vel aliquam felis blandit.

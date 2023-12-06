@@ -81,7 +81,7 @@
             </a>
           </li>
 
-          <li class="sidebar-item has-sub {{ request()->is('adminhome') ? 'active' : ''}}">
+          <li class="sidebar-item has-sub {{ request()->is(['adminhome', 'adminstudio', 'adminprice']) ? 'active' : ''}}">
             <a href="#" class="sidebar-link">
               <i class="ri-edit-line"></i>
               <span>Posting</span>
@@ -95,13 +95,13 @@
               </li>
 
               <li class="submenu-item">
-                <a href="component-alert.html" class="submenu-link"
+                <a href="/adminstudio" class="submenu-link"
                   >Studio</a
                 >
               </li>
 
               <li class="submenu-item">
-                <a href="component-badge.html" class="submenu-link"
+                <a href="/adminprice" class="submenu-link"
                   >Pricelist</a
                 >
               </li>

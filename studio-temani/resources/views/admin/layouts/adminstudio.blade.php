@@ -1,14 +1,14 @@
-@extends('admin.adminHome')
-@section('title', 'Home Editor')
-@section('homeeditor')
+@extends('admin.studioadmin')
+@section('title', 'Studio Admin')
+@section('studioadmin')
     <div class="page-heading">
         <div class="page-title">
             <div class="row">
                 <div class="col-12 col-md-6 order-md-1 order-last">
-                    <h3>Edit Home</h3>
+                    <h3>Edit Studio Posting</h3>
                     <p class="text-subtitle text-muted">
-                        Gunakan posting editor ini untuk melakukan edit
-                        pada halaman Home.
+                        Gunakan posting editor ini untuk melakukan editing
+                        info tentang pricelist yang telah disediakan.
                     </p>
                 </div>
                 <div class="col-12 col-md-6 order-md-2 order-first">
@@ -18,7 +18,7 @@
                                 <a href="/admin">Halaman Utama</a>
                             </li>
                             <li class="breadcrumb-item active" aria-current="page">
-                                Home
+                                Studio
                             </li>
                         </ol>
                     </nav>
@@ -30,69 +30,20 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <h4 class="card-title">Edit Judul</h4>
+                            <h4 class="card-title">Edit Judul Studio</h4>
                         </div>
                         <div class="card-body">
-                            <form action="{{ route('editHome', $homes->id) }}" method="POST">
-                                @csrf
-                                @method('PUT')
-                                <div class="form-group">
-                                    <label for="name" class="form-label">Title Header</label>
-                                    <input type="text" name="title" id="name" class="form-control"
-                                        placeholder="Isi Title">
-                                </div>
-                                <div class="form-group">
-                                    <textarea name="tagline" id="default" cols="30" rows="10"></textarea>
-                                </div>
-                                <div class="form-group">
-                                    <button type="submit" class="btn btn-primary">Simpan</button>
-                                </div>
-                            </form>
+                            <textarea name="" id="default" cols="30" rows="10"></textarea>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <div class="col-12 col-md-6 order-md-1 order-last">
-            <h3>Edit About</h3>
-            <p class="text-subtitle text-muted">
-                Gunakan posting editor ini untuk melakukan
-                edit pada halaman About yang telah disediakan.
-            </p>
-        </div>
-        <section class="section">
-            <div class="row">
-                <div class="col-12">
-                    <div class="card">
-                        <div class="card-header">
-                            <h4 class="card-title">Edit About</h4>
-                        </div>
-                        <div class="card-body">
-                            <form action="{{ route('editAbout', $abouts->id) }}" method="POST">
-                                @csrf
-                                @method('PUT')
-                                <div class="form-group">
-                                    <label for="name" class="form-label">Title Header</label>
-                                    <input type="text" name="title" id="name" class="form-control"
-                                        placeholder="Isi Title">
-                                </div>
-                                <div class="form-group">
-                                    <textarea name="" id="default" cols="30" rows="10"></textarea>
-                                </div>
-                                <div class="form-group">
-                                    <button type="submit" class="btn btn-primary">Simpan</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <div class="col-12 col-md-6 order-md-1 order-last">
-            <h3>Edit Pricelist Info</h3>
+            <h3>Edit Equipment List</h3>
             <p class="text-subtitle text-muted">
                 Gunakan posting editor ini untuk melakukan editing
-                info tentang pricelist yang telah disediakan.
+                info tentang Equipment yang telah disediakan.
             </p>
         </div>
         <section class="section">
@@ -100,7 +51,7 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <h4 class="card-title">Edit Judul Pricelist</h4>
+                            <h4 class="card-title">Edit Judul Equipment List</h4>
                         </div>
                         <div class="card-body">
                             <textarea name="" id="default" cols="30" rows="10"></textarea>
@@ -108,7 +59,28 @@
                     </div>
                     <div class="card">
                         <div class="card-header">
-                            <h4 class="card-title">Edit Isi Text Pricelist</h4>
+                            <h4 class="card-title">Edit Deskripsi Equipment List</h4>
+                        </div>
+                        <div class="card-body">
+                            <textarea name="" id="default" cols="30" rows="10"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="col-12 col-md-6 order-md-1 order-last">
+            <h3>Edit Quotes Studio</h3>
+            <p class="text-subtitle text-muted">
+                Gunakan posting editor ini untuk menambahkan atau
+                mengedit quotes yang akan ditampilkan pada halaman
+            </p>
+        </div>
+        <section class="section">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">Edit Text Quotes</h4>
                         </div>
                         <div class="card-body">
                             <textarea name="" id="default" cols="30" rows="10"></textarea>

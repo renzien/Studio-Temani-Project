@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\FirstPageController;
 use App\Http\Controllers\Book;
 use App\Http\Controllers\Studio;
 use App\Http\Controllers\Dashboard;
@@ -21,11 +22,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home', [
-        "title" => "Home"
-    ]);
-});
+// Index
+Route::get('/', [FirstPageController::class, 'index']);
 
 // Studio
 Route::get('/studio', [Studio::class, 'studio']);
@@ -44,6 +42,12 @@ Route::post('/register', [LoginController::class, 'registerProcess'])->name('reg
 
 // Home Posting
 Route::get('/adminhome', [Posting::class, 'posting']);
+Route::put('/adminhome/{home}', [Posting::class, 'editHome'])->name('editHome');
+Route::put('/adminhome/{about}/edit', [Posting::class, 'editAbout'])->name('editAbout');
+
+
+Route::get('/adminprice', [Posting::class, 'pricelist']);
+Route::get('/adminstudio', [Posting::class, 'studio']);
 
 // Katalog
 Route::get('/selfphoto', [Katalog::class, 'selfphoto']);

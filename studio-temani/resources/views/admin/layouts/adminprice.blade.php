@@ -1,14 +1,14 @@
-@extends('admin.adminHome')
-@section('title', 'Home Editor')
-@section('homeeditor')
+@extends('admin.priceadmin')
+@section('title', 'Pricelist')
+@section('priceeditor')
     <div class="page-heading">
         <div class="page-title">
             <div class="row">
                 <div class="col-12 col-md-6 order-md-1 order-last">
-                    <h3>Edit Home</h3>
+                    <h3>Edit Pricelist Posting</h3>
                     <p class="text-subtitle text-muted">
-                        Gunakan posting editor ini untuk melakukan edit
-                        pada halaman Home.
+                        Gunakan posting editor ini untuk melakukan editing
+                        info tentang pricelist yang telah disediakan.
                     </p>
                 </div>
                 <div class="col-12 col-md-6 order-md-2 order-first">
@@ -18,7 +18,7 @@
                                 <a href="/admin">Halaman Utama</a>
                             </li>
                             <li class="breadcrumb-item active" aria-current="page">
-                                Home
+                                Pricelist
                             </li>
                         </ol>
                     </nav>
@@ -30,34 +30,28 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <h4 class="card-title">Edit Judul</h4>
+                            <h4 class="card-title">Edit Judul Pricelist</h4>
                         </div>
                         <div class="card-body">
-                            <form action="{{ route('editHome', $homes->id) }}" method="POST">
-                                @csrf
-                                @method('PUT')
-                                <div class="form-group">
-                                    <label for="name" class="form-label">Title Header</label>
-                                    <input type="text" name="title" id="name" class="form-control"
-                                        placeholder="Isi Title">
-                                </div>
-                                <div class="form-group">
-                                    <textarea name="tagline" id="default" cols="30" rows="10"></textarea>
-                                </div>
-                                <div class="form-group">
-                                    <button type="submit" class="btn btn-primary">Simpan</button>
-                                </div>
-                            </form>
+                            <textarea name="" id="default" cols="30" rows="10"></textarea>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">Edit Deskripsi Pricelist</h4>
+                        </div>
+                        <div class="card-body">
+                            <textarea name="" id="default" cols="30" rows="10"></textarea>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <div class="col-12 col-md-6 order-md-1 order-last">
-            <h3>Edit About</h3>
+            <h3>Edit Inquiry</h3>
             <p class="text-subtitle text-muted">
-                Gunakan posting editor ini untuk melakukan
-                edit pada halaman About yang telah disediakan.
+                Gunakan posting editor ini untuk melakukan editing
+                info tentang inquiry yang telah disediakan.
             </p>
         </div>
         <section class="section">
@@ -65,31 +59,17 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <h4 class="card-title">Edit About</h4>
+                            <h4 class="card-title">Edit Deskripsi Inquiry</h4>
                         </div>
                         <div class="card-body">
-                            <form action="{{ route('editAbout', $abouts->id) }}" method="POST">
-                                @csrf
-                                @method('PUT')
-                                <div class="form-group">
-                                    <label for="name" class="form-label">Title Header</label>
-                                    <input type="text" name="title" id="name" class="form-control"
-                                        placeholder="Isi Title">
-                                </div>
-                                <div class="form-group">
-                                    <textarea name="" id="default" cols="30" rows="10"></textarea>
-                                </div>
-                                <div class="form-group">
-                                    <button type="submit" class="btn btn-primary">Simpan</button>
-                                </div>
-                            </form>
+                            <textarea name="" id="default" cols="30" rows="10"></textarea>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <div class="col-12 col-md-6 order-md-1 order-last">
-            <h3>Edit Pricelist Info</h3>
+            <h3>Edit Pricelist Category</h3>
             <p class="text-subtitle text-muted">
                 Gunakan posting editor ini untuk melakukan editing
                 info tentang pricelist yang telah disediakan.
