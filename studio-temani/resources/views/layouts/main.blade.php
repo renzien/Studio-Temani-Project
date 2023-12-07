@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Studio Temani Official Page | @yield('title') </title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     @vite('resources/css/app.css')
     {{-- Remix Icons --}}
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">

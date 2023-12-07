@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Home;
 use App\Models\About;
+use App\Models\Studio;
 
 class FirstPageController extends Controller
 {
@@ -14,6 +15,7 @@ class FirstPageController extends Controller
         $post = [
             'homes' => Home::find(1),
             'abouts' => About::find(1),
+            'studios' => Studio::find(1),
         ];
 
         return view('home', $post);

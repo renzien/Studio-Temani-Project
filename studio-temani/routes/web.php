@@ -44,7 +44,7 @@ Route::post('/register', [LoginController::class, 'registerProcess'])->name('reg
 Route::get('/adminhome', [Posting::class, 'posting']);
 Route::put('/adminhome/{home}', [Posting::class, 'editHome'])->name('editHome');
 Route::put('/adminhome/{about}/edit', [Posting::class, 'editAbout'])->name('editAbout');
-
+Route::put('/adminhome/{studio}/editstudio', [Posting::class, 'editStudio'])->name('editStudio');
 
 Route::get('/adminprice', [Posting::class, 'pricelist']);
 Route::get('/adminstudio', [Posting::class, 'studio']);

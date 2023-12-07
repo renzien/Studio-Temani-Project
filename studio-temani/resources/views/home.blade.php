@@ -17,8 +17,8 @@
     <section class="grid grid-cols-2">
         <div id="about-us" class="text-black">
             <h1 class="font-quicksand mt-24 ml-20 text-4xl font-bold leading-normal">{{ $abouts->title }}</h1>
-            <div class="text-lg">
-                <p class="font-quicksand mt-8 ml-20 mr-28">{{ $abouts->desc }}</p>
+            <div class="text-lg text-justify font-quicksand mt-8 ml-20 mr-28 mb-9">
+                {!! $abouts->desc !!}</p>
             </div>
         </div>
         <div class="bg-studio-temani">
@@ -34,15 +34,9 @@
             </div>
         </div>
         <div class="studio text-black">
-            <h1 class="font-quicksand mt-24 ml-20 text-4xl font-bold leading-normal">Studio</h1>
-            <div class="text-lg">
-                <p class="font-quicksand mt-8 ml-20 mr-28">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Aliquam commodo varius erat vitae hendrerit. Morbi
-                    rhoncus augue a nisi fermentum, vel aliquam felis blandit.
-                    Nulla facilisi. Nullam semper justo id gravida tincidunt. Duis
-                    facilisis convallis dolor a mattis. Integer magna felis, commodo
-                    non mi ut, auctor varius nibh. Phasellus iaculis facilisis dolor ac
-                    ornare.</p>
+            <h1 class="font-quicksand mt-24 ml-20 text-4xl font-bold leading-normal">{{ $studios->title }}</h1>
+            <div class="text-lg text-justify font-quicksand mt-8 ml-20 mr-28 mb-9">
+                {!! $studios->desc !!}
             </div>
             <div class="py-28 px-20">
                 <button
@@ -109,7 +103,7 @@
                 <ul class="flex flex-col gap-3">
                     <li>
                         <i class="ri-instagram-line"></i>
-                        <a href="">Instagram</a>
+                        <a href="https://www.instagram.com/studio___temani/">Instagram</a>
                     </li>
                     <li>
                         <i class="ri-whatsapp-line"></i>

@@ -77,7 +77,42 @@
                                         placeholder="Isi Title">
                                 </div>
                                 <div class="form-group">
-                                    <textarea name="" id="default" cols="30" rows="10"></textarea>
+                                    <textarea name="desc" id="default" cols="30" rows="10"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary">Simpan</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="col-12 col-md-6 order-md-1 order-last">
+            <h3>Edit Studio Info</h3>
+            <p class="text-subtitle text-muted">
+                Gunakan posting editor ini untuk melakukan editing
+                info tentang studio yang telah disediakan.
+            </p>
+        </div>
+        <section class="section">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">Edit Judul Studio</h4>
+                        </div>
+                        <div class="card-body">
+                            <form action="{{ route('editStudio', $studios->id) }}" method="POST">
+                                @csrf
+                                @method('PUT')
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Title Header</label>
+                                    <input type="text" name="title" id="name" class="form-control"
+                                        placeholder="Isi Title">
+                                </div>
+                                <div class="form-group">
+                                    <textarea name="desc" id="default" cols="30" rows="10"></textarea>
                                 </div>
                                 <div class="form-group">
                                     <button type="submit" class="btn btn-primary">Simpan</button>
@@ -95,28 +130,6 @@
                 info tentang pricelist yang telah disediakan.
             </p>
         </div>
-        <section class="section">
-            <div class="row">
-                <div class="col-12">
-                    <div class="card">
-                        <div class="card-header">
-                            <h4 class="card-title">Edit Judul Pricelist</h4>
-                        </div>
-                        <div class="card-body">
-                            <textarea name="" id="default" cols="30" rows="10"></textarea>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header">
-                            <h4 class="card-title">Edit Isi Text Pricelist</h4>
-                        </div>
-                        <div class="card-body">
-                            <textarea name="" id="default" cols="30" rows="10"></textarea>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
         <div class="col-12 col-md-6 order-md-1 order-last">
             <h3>Upload Foto</h3>
             <p class="text-subtitle text-muted">

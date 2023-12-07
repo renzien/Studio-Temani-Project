@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Home;
 use App\Models\About;
+use App\Models\Studio;
 
 class Posting extends Controller
 {
@@ -13,6 +14,7 @@ class Posting extends Controller
         $post = [
             'homes' => Home::find(1),
             'abouts' => About::find(1),
+            'studios' => Studio::find(1),
         ];
         return view('admin.layouts.adHome', $post);
     }
@@ -40,6 +42,16 @@ class Posting extends Controller
         ];
 
         $about->update($data);
+        return redirect('/adminhome');
+    }
+
+    public function editStudio(Request $request, Studio $studio) {
+        $data = [
+            'title' => $request->input('title'),
+            'desc' => $request->input('desc')
+        ];
+
+        $studio->update($data);
         return redirect('/adminhome');
     }
 }
