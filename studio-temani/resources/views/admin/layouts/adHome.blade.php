@@ -173,7 +173,7 @@
                             <h4 class="card-title">Edit Contact Info</h4>
                         </div>
                         <div class="card-body">
-                            <form action="{{ route('editPricelist', $contacts->id) }}" method="POST">
+                            <form action="{{ route('editContact', $contacts->id) }}" method="POST">
                                 @csrf
                                 @method('PUT')
                                 <div class="form-group">
