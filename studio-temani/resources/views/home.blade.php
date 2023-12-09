@@ -40,21 +40,17 @@
             </div>
             <div class="py-28 px-20">
                 <button
-                    class="bg-black hover:bg-slate-900 text-white font-quicksand font-bold py-2 px-4 mr-5 rounded-lg">Read
+                    class="bg-slate-900 hover:bg-black text-white font-quicksand font-bold py-2 px-4 mr-5 rounded-lg">Read
                     More</button>
             </div>
         </div>
     </section>
     <section class="p-20"
         style="background-image: url('assets/img/rectangle-6.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
-        <div class="flex flex-col items-center h-4/5 text-white font-quicksand">
-            <h1 class="text-4xl font-bold leading-normal">Pricelist</h1>
-            <div class="text-center justify-center m-28 ">
-                <p class="text-xl leading-normal">Capture your special moments with Studio Temani and cherish them forever.
-                    Our Pricelist Rates are designed
-                    to provide you with a tailored photography experience, ensuring that every occasion is remembered with
-                    joy.
-                    Here are our pricelist rates for various studio facilities.</h1>
+        <div class="flex flex-col items-center h-2/5 text-white font-quicksand">
+            <h1 class="text-4xl font-bold leading-normal">{{ $pricelists->title }}</h1>
+            <div class="text-center justify-center m-28 text-xl leading-normal">
+                {!! $pricelists->desc !!}
             </div>
             <a href="/pricelist"><button
                     class="bg-white hover:bg-gray-100 text-black font-quicksand font-bold py-2 px-4 rounded-lg">Check This
@@ -91,15 +87,13 @@
                     class="border-2 border-gray-300 p-2 rounded-lg w-full" placeholder="Enter your message"></textarea>
             </div>
             <div class="relative self-center bottom-10">
-                <button class="bg-black hover:bg-slate-700 p-3 px-20 rounded-lg text-white" type="submit">Send</button>
+                <button class="bg-slate-900 hover:bg-black p-3 px-20 rounded-lg text-white" type="submit">Send</button>
             </div>
         </form>
         <div class="self-center">
             <div class="flex flex-col gap-10 p-10 items-center justify-center bg-white w-100 shadow-lg rounded-lg">
                 <img src="assets/img/logo-update.png" alt="Studio Temani" width="200">
-                <h5 class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ipsam temporibus
-                    perspiciatis, quo aspernatur aperiam? Molestiae qui enim nobis cupiditate earum, et laudantium quam quod
-                    quibusdam omnis dolores reprehenderit corporis!</h5>
+                <h5 class="text-center">{{ $contacts->desc }}</h5>
                 <ul class="flex flex-col gap-3">
                     <li>
                         <i class="ri-instagram-line"></i>

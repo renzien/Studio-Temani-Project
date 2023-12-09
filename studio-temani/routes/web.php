@@ -45,6 +45,8 @@ Route::get('/adminhome', [Posting::class, 'posting']);
 Route::put('/adminhome/{home}', [Posting::class, 'editHome'])->name('editHome');
 Route::put('/adminhome/{about}/edit', [Posting::class, 'editAbout'])->name('editAbout');
 Route::put('/adminhome/{studio}/editstudio', [Posting::class, 'editStudio'])->name('editStudio');
+Route::put('/adminhome/{pricelist}/editpricelist', [Posting::class, 'editPricelist'])->name('editPricelist');
+Route::put('/adminhome/{contact}/editcontact', [Posting::class, 'editContact'])->name('editContact');
 
 Route::get('/adminprice', [Posting::class, 'pricelist']);
 Route::get('/adminstudio', [Posting::class, 'studio']);

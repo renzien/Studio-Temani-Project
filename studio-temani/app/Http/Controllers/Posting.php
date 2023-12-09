@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\Models\Home;
 use App\Models\About;
 use App\Models\Studio;
+use App\Models\Pricelist;
+use App\Models\Contact;
 
 class Posting extends Controller
 {
@@ -15,12 +17,16 @@ class Posting extends Controller
             'homes' => Home::find(1),
             'abouts' => About::find(1),
             'studios' => Studio::find(1),
+            'pricelists' => Pricelist::find(1),
+            'contacts' => Contact::find(1),
         ];
         return view('admin.layouts.adHome', $post);
     }
+
     public function pricelist() {
         return view('admin.layouts.adminprice');
     }
+
     public function studio() {
         return view('admin.layouts.adminstudio');
     }
@@ -52,6 +58,25 @@ class Posting extends Controller
         ];
 
         $studio->update($data);
+        return redirect('/adminhome');
+    }
+
+    public function editPricelist(Request $request, Pricelist $pricelist) {
+        $data = [
+            'title' => $request->input('title'),
+            'desc' => $request->input('desc')
+        ];
+
+        $pricelist->update($data);
+        return redirect('/adminhome');
+    }
+
+    public function editContact(Request $request, Contact $contact) {
+        $data = [
+            'desc' => $request->input('desc')
+        ];
+
+        $contact->update($data);
         return redirect('/adminhome');
     }
 }
