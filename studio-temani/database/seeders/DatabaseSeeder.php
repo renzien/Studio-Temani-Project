@@ -10,6 +10,8 @@ use App\Models\About;
 use App\Models\Studio;
 use App\Models\Pricelist;
 use App\Models\Contact;
+use App\Models\PricelistHome;
+use App\Models\Inquiry;
 
 class DatabaseSeeder extends Seeder
 {
@@ -59,6 +61,18 @@ class DatabaseSeeder extends Seeder
 
         Contact::create([
             'desc' => 'Hi! Kalo kalian mau tanya-tanya atau mau booking studio, bisa langsung hubungi kontak di bawah ini ya! Jangan lupa follow juga akun sosial media kita!',
+        ]);
+
+        PricelistHome::create([
+            'title' => 'Lihat Harga Pricelist Kita!',
+            'desc' => 'Abadikan momen spesial Anda dengan Studio Temani dan kenang selamanya. Harga Daftar Harga kami dirancang untuk memberikan Anda pengalaman fotografi yang disesuaikan, memastikan bahwa setiap kesempatan dikenang dengan sukacita. Berikut adalah daftar harga kami untuk berbagai fasilitas studio.',
+            'photo' => 'bg-hero-2.jpg'
+        ]);
+
+        Inquiry::create([
+            'title' => 'Inquiry',
+            'desc' => 'Hi! Kalo kalian mau tanya-tanya atau mau booking studio, bisa langsung hubungi kontak di bawah ini ya! Jangan lupa follow juga akun sosial media kita!',
+            'photo' => 'bg-hero-2.jpg'
         ]);
     }
 }

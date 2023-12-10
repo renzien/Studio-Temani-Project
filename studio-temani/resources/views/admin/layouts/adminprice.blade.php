@@ -30,25 +30,31 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <h4 class="card-title">Edit Judul Pricelist</h4>
+                            <h4 class="card-title">Edit Tentang Pricelist</h4>
                         </div>
                         <div class="card-body">
-                            <textarea name="" id="default" cols="30" rows="10"></textarea>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header">
-                            <h4 class="card-title">Edit Deskripsi Pricelist</h4>
-                        </div>
-                        <div class="card-body">
-                            <textarea name="" id="default" cols="30" rows="10"></textarea>
+                            <form action="{{ route('editPricelistHome', $pricelisthomes->id) }}" method="POST">
+                                @csrf
+                                @method('PUT')
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Title Header</label>
+                                    <input type="text" name="title" id="name" class="form-control"
+                                        placeholder="Isi Title">
+                                </div>
+                                <div class="form-group">
+                                    <textarea name="desc" id="default" cols="30" rows="10"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary">Simpan</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <div class="col-12 col-md-6 order-md-1 order-last">
-            <h3>Edit Inquiry</h3>
+            <h3>Edit Inquiry Info</h3>
             <p class="text-subtitle text-muted">
                 Gunakan posting editor ini untuk melakukan editing
                 info tentang inquiry yang telah disediakan.
@@ -59,10 +65,24 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <h4 class="card-title">Edit Deskripsi Inquiry</h4>
+                            <h4 class="card-title">Edit Tentang Inquiry</h4>
                         </div>
                         <div class="card-body">
-                            <textarea name="" id="default" cols="30" rows="10"></textarea>
+                            <form action="{{ route('editInquiry', $inquirys->id) }}" method="POST">
+                                @csrf
+                                @method('PUT')
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Title Header</label>
+                                    <input type="text" name="title" id="name" class="form-control"
+                                        placeholder="Isi Title">
+                                </div>
+                                <div class="form-group">
+                                    <textarea name="desc" id="default" cols="30" rows="10"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary">Simpan</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>

@@ -48,7 +48,11 @@ Route::put('/adminhome/{studio}/editstudio', [Posting::class, 'editStudio'])->na
 Route::put('/adminhome/{pricelist}/editpricelist', [Posting::class, 'editPricelist'])->name('editPricelist');
 Route::put('/adminhome/{contact}/editcontact', [Posting::class, 'editContact'])->name('editContact');
 
+// Pricelist Posting
 Route::get('/adminprice', [Posting::class, 'pricelist']);
+Route::put('/adminprice/{pricelisthome}', [Posting::class, 'editPricelistHome'])->name('editPricelistHome');
+Route::put('/adminprice/{inquiry}/editinquiry', [Posting::class, 'editInquiry'])->name('editInquiry');
+
 Route::get('/adminstudio', [Posting::class, 'studio']);
 
 // Katalog

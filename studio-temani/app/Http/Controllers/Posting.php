@@ -7,6 +7,8 @@ use App\Models\Home;
 use App\Models\About;
 use App\Models\Studio;
 use App\Models\Pricelist;
+use App\Models\PricelistHome;
+use App\Models\Inquiry;
 use App\Models\Contact;
 
 class Posting extends Controller
@@ -24,13 +26,19 @@ class Posting extends Controller
     }
 
     public function pricelist() {
-        return view('admin.layouts.adminprice');
+        $postprice = [
+            'pricelisthomes' => PricelistHome::find(1),
+            'inquirys' => Inquiry::find(1),
+        ];
+
+        return view('admin.layouts.adminprice', $postprice);
     }
 
     public function studio() {
         return view('admin.layouts.adminstudio');
     }
 
+    // Update Home
     public function editHome(Request $request, Home $home) {
         $data = [
             'title' => $request->input('title'),
@@ -78,5 +86,26 @@ class Posting extends Controller
 
         $contact->update($data);
         return redirect('/adminhome');
+    }
+
+    // Update Pricelist
+    public function editPricelistHome(Request $request, PricelistHome $pricelisthome) {
+        $data = [
+            'title' => $request->input('title'),
+            'desc' => $request->input('desc')
+        ];
+
+        $pricelisthome->update($data);
+        return redirect('/adminprice');
+    }
+
+    public function editInquiry(Request $request, Inquiry $inquiry) {
+        $data = [
+            'title' => $request->input('title'),
+            'desc' => $request->input('desc')
+        ];
+
+        $inquiry->update($data);
+        return redirect('/adminprice');
     }
 }

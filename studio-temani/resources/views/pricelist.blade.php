@@ -1,4 +1,5 @@
 @extends('layouts.main')
+@section('title', 'Pricelist')
 @section('container')
     <div class="grid grid-cols-2">
         <div class="font-quicksand pt-20">
@@ -6,13 +7,12 @@
                 <img src="assets/img/logo-update.png" alt="Studio Temani" class="w-2/5">
             </div>
             <div class="flex items-center justify-center">
-                <h1 class="font-bold text-2xl leading-normal mt-8 text-black">Check Out Our Pricelist</h1>
+                <h1 class="font-bold text-2xl leading-normal mt-8 text-black">{{ $pricelisthomes->title }}</h1>
             </div>
             <div class="flex items-center justify-center text-center mt-14 ml-28 mr-28">
-                <p class="font-base text-lg leading-normal text-black">Discover the perfect package to capture your special
-                    moments with Studio Temani.Our price list is designed
-                    to cater to various photography needs, ensuring that you
-                    receive exceptional services at competitive rates.</p>
+                <div class="font-base text-lg leading-normal text-black text-justify">
+                    {!! $pricelisthomes->desc !!}
+                </div>
             </div>
         </div>
         <div class="bg-studio-temani">
@@ -21,13 +21,11 @@
             </div>
         </div>
     </div>
-    <section class="h-full" style="background-image: url('assets/img/inquiry.png'); background-repeat: no-repeat;">
+    <section class="h-full" style="background-image: url('assets/img/inquiry_hero2.png'); background-repeat: no-repeat;">
         <div class="flex flex-col items-center text-white font-quicksand">
-            <h1 class="text-3xl font-bold pt-14 leading-normal">Send an Inquiry</h1>
-            <div class="text-center justify-center m-20">
-                <p class="text-2xl font-bold text-center leading-normal">“Have specific requirements in mind? Send us an
-                    inquiry
-                    detailing your preferences, and we'll promptly provide you”</h1>
+            <h1 class="text-3xl font-bold pt-14 leading-normal">{{ $inquirys->title }}</h1>
+            <div class="text-center justify-center m-20 text-2xl font-bold leading-normal">
+                {!! $inquirys->desc !!}
             </div>
             <button
                 class="bg-white hover:bg-gray-100 text-black font-quicksand font-bold py-2 px-4 mb-12 rounded-lg">Contact
