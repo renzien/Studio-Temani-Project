@@ -13,11 +13,13 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 
     {{-- CSS --}}
-    <link rel="stylesheet" href="assets/css/app.css">
+    {{-- <link rel="stylesheet" href="assets/css/app.css">
     <link rel="stylesheet" href="assets/css/app-dark.css">
-    <link rel="stylesheet" href="assets/css/auth.css">
+    <link rel="stylesheet" href="assets/css/auth.css"> --}}
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <script src="assets/static/js/initTheme.js"></script>
     @yield('register')
+    <script src="assets/js/login.js"></script>
 </body>

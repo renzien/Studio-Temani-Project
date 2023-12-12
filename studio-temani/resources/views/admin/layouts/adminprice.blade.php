@@ -89,10 +89,10 @@
             </div>
         </section>
         <div class="col-12 col-md-6 order-md-1 order-last">
-            <h3>Edit Pricelist Category</h3>
+            <h3>Edit Pricelist Family Category</h3>
             <p class="text-subtitle text-muted">
                 Gunakan posting editor ini untuk melakukan editing
-                info tentang pricelist yang telah disediakan.
+                info tentang pricelist family yang telah disediakan.
             </p>
         </div>
         <section class="section">
@@ -100,18 +100,139 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <h4 class="card-title">Edit Judul Pricelist</h4>
+                            <h4 class="card-title">Edit Family Pricelist Info</h4>
                         </div>
                         <div class="card-body">
-                            <textarea name="" id="default" cols="30" rows="10"></textarea>
+                            <form action="{{ route('editFamily', $familys->id) }}" method="POST">
+                                @csrf
+                                @method('PUT')
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Title Header</label>
+                                    <input type="text" name="title" id="name" class="form-control"
+                                        placeholder="Isi Title Disini">
+                                </div>
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Fitur 1</label>
+                                    <input type="text" name="tagone" id="name" class="form-control"
+                                        placeholder="Isi Fitur Yang Diberikan">
+                                </div>
+                                <div class="form-group">
+                                    <textarea name="descone" id="default" cols="30" rows="10" placeholder="Isi Deskripsi Fitur"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Fitur 2</label>
+                                    <input type="text" name="tagtwo" id="name" class="form-control"
+                                        placeholder="Isi Fitur Yang Diberikan">
+                                </div>
+                                <div class="form-group">
+                                    <textarea name="desctwo" id="default" cols="30" rows="10" placeholder="Isi Deskripsi Fitur"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Unit</label>
+                                    <input type="text" name="unit" id="name" class="form-control"
+                                        placeholder="Isi dapat berapa unit">
+                                </div>
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Harga</label>
+                                    <input type="text" name="price" id="name" class="form-control"
+                                        placeholder="Harga yang diberikan">
+                                </div>
+                                <div class="form-group">
+                                    <textarea name="descprice" id="default" cols="30" rows="10" placeholder="Isi Deskripsi Paket Tersebut"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Unit Kedua</label>
+                                    <input type="text" name="unitprice" id="name" class="form-control"
+                                        placeholder="Isi dapat berapa unit">
+                                </div>
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Harga</label>
+                                    <input type="text" name="pricetwo" id="name" class="form-control"
+                                        placeholder="Harga yang diberikan">
+                                </div>
+                                <div class="form-group">
+                                    <textarea name="descpricetwo" id="default" cols="30" rows="10"
+                                        placeholder="Isi Deskripsi Paket Tersebut"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary">Simpan</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+        <div class="col-12 col-md-6 order-md-1 order-last">
+            <h3>Edit Pricelist Self-Photo Category</h3>
+            <p class="text-subtitle text-muted">
+                Gunakan posting editor ini untuk melakukan editing
+                info tentang pricelist family yang telah disediakan.
+            </p>
+        </div>
+        <section class="section">
+            <div class="row">
+                <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <h4 class="card-title">Edit Isi Text Pricelist</h4>
+                            <h4 class="card-title">Edit Self-Photo Pricelist Info</h4>
                         </div>
                         <div class="card-body">
-                            <textarea name="" id="default" cols="30" rows="10"></textarea>
+                            <form action="{{ route('editSelfPhoto', $selfphotos->id) }}" method="POST">
+                                @csrf
+                                @method('PUT')
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Title Header</label>
+                                    <input type="text" name="title" id="name" class="form-control"
+                                        placeholder="Isi Title Disini">
+                                </div>
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Fitur 1</label>
+                                    <input type="text" name="tagone" id="name" class="form-control"
+                                        placeholder="Isi Fitur Yang Diberikan">
+                                </div>
+                                <div class="form-group">
+                                    <textarea name="descone" id="default" cols="30" rows="10" placeholder="Isi Deskripsi Fitur"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Fitur 2</label>
+                                    <input type="text" name="tagtwo" id="name" class="form-control"
+                                        placeholder="Isi Fitur Yang Diberikan">
+                                </div>
+                                <div class="form-group">
+                                    <textarea name="desctwo" id="default" cols="30" rows="10" placeholder="Isi Deskripsi Fitur"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Unit</label>
+                                    <input type="text" name="unit" id="name" class="form-control"
+                                        placeholder="Isi dapat berapa unit">
+                                </div>
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Harga</label>
+                                    <input type="text" name="price" id="name" class="form-control"
+                                        placeholder="Harga yang diberikan">
+                                </div>
+                                <div class="form-group">
+                                    <textarea name="descprice" id="default" cols="30" rows="10" placeholder="Isi Deskripsi Paket Tersebut"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Unit Kedua</label>
+                                    <input type="text" name="unitprice" id="name" class="form-control"
+                                        placeholder="Isi dapat berapa unit">
+                                </div>
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Harga</label>
+                                    <input type="text" name="pricetwo" id="name" class="form-control"
+                                        placeholder="Harga yang diberikan">
+                                </div>
+                                <div class="form-group">
+                                    <textarea name="descpricetwo" id="default" cols="30" rows="10"
+                                        placeholder="Isi Deskripsi Paket Tersebut"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary">Simpan</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>

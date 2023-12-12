@@ -12,6 +12,8 @@ use App\Models\Pricelist;
 use App\Models\Contact;
 use App\Models\PricelistHome;
 use App\Models\Inquiry;
+use App\Models\Family;
+use App\Models\SelfPhoto;
 
 class DatabaseSeeder extends Seeder
 {
@@ -72,6 +74,36 @@ class DatabaseSeeder extends Seeder
         Inquiry::create([
             'title' => 'Inquiry',
             'desc' => 'Hi! Kalo kalian mau tanya-tanya atau mau booking studio, bisa langsung hubungi kontak di bawah ini ya! Jangan lupa follow juga akun sosial media kita!',
+            'photo' => 'bg-hero-2.jpg'
+        ]);
+
+        Family::create([
+            'title' => 'Sesi Foto Keluarga',
+            'tagone' => '//Studio Besar',
+            'descone' => '(Hanya Tersedia Background Putih)',
+            'tagtwo' => '//30 Minut per Sesi',
+            'desctwo' => '(Bebas Potret)',
+            'unit' => '5 - 7 Pax',
+            'price' => '200K',
+            'descprice' => 'Dapat 3 Print Foto 4R',
+            'unitprice' => '8 - 10 Pax',
+            'pricetwo' => '300K',
+            'descpricetwo' => 'Dapat 5 Print Foto 4R',
+            'photo' => 'bg-hero-2.jpg'
+        ]);
+
+        SelfPhoto::create([
+            'title' => 'Sesi Foto Sendiri',
+            'tagone' => '//Studio Kecil',
+            'descone' => '(Hanya Tersedia Background Putih)',
+            'tagtwo' => '//20 Menit Per Sesi',
+            'desctwo' => '(Potret Dibatasi)',
+            'unit' => '1 - 2 Pax',
+            'price' => '400K',
+            'descprice' => 'Dapat 1 Samsung Galaxy Flip',
+            'unitprice' => '3 - 4 Pax',
+            'pricetwo' => '650K',
+            'descpricetwo' => 'Dapat 2 Mobil Purrarri',
             'photo' => 'bg-hero-2.jpg'
         ]);
     }

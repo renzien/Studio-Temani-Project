@@ -8,6 +8,8 @@ use App\Models\About;
 use App\Models\Studio;
 use App\Models\Pricelist;
 use App\Models\PricelistHome;
+use App\Models\SelfPhoto;
+use App\Models\Family;
 use App\Models\Inquiry;
 use App\Models\Contact;
 
@@ -29,6 +31,8 @@ class Posting extends Controller
         $postprice = [
             'pricelisthomes' => PricelistHome::find(1),
             'inquirys' => Inquiry::find(1),
+            'familys' => Family::find(1),
+            'selfphotos' => SelfPhoto::find(1),
         ];
 
         return view('admin.layouts.adminprice', $postprice);
@@ -106,6 +110,44 @@ class Posting extends Controller
         ];
 
         $inquiry->update($data);
+        return redirect('/adminprice');
+    }
+
+    public function editFamily(Request $request, Family $family) {
+        $data = [
+            'title' => $request->input('title'),
+            'tagone' => $request->input('tagone'),
+            'descone' => $request->input('descone'),
+            'tagtwo' => $request->input('tagtwo'),
+            'desctwo' => $request->input('desctwo'),
+            'unit' => $request->input('unit'),
+            'price' => $request->input('price'),
+            'descprice' => $request->input('descprice'),
+            'unitprice' => $request->input('unitprice'),
+            'pricetwo' => $request->input('pricetwo'),
+            'descpricetwo' => $request->input('descpricetwo'),
+        ];
+
+        $family->update($data);
+        return redirect('/adminprice');
+    }
+
+    public function editSelfPhoto(Request $request, SelfPhoto $selfphoto) {
+        $data = [
+            'title' => $request->input('title'),
+            'tagone' => $request->input('tagone'),
+            'descone' => $request->input('descone'),
+            'tagtwo' => $request->input('tagtwo'),
+            'desctwo' => $request->input('desctwo'),
+            'unit' => $request->input('unit'),
+            'price' => $request->input('price'),
+            'descprice' => $request->input('descprice'),
+            'unitprice' => $request->input('unitprice'),
+            'pricetwo' => $request->input('pricetwo'),
+            'descpricetwo' => $request->input('descpricetwo'),
+        ];
+
+        $selfphoto->update($data);
         return redirect('/adminprice');
     }
 }
