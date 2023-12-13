@@ -100,14 +100,14 @@
         </div>
     </section>
     <section class="w-full" style="background-image: url('assets/img/customer-feedback.png'); background-repeat: no-repeat;">
-        <div class="flex items-center justify-center font-quicksand">
+        <div class="flex items-center justify-center font-quicksand" data-aos="fade-up" data-aos-duration="1000">
             <h1 class="text-white font-bold text-3xl leading-normal pt-10">Customer Feedback</h1>
         </div>
         <div class="flex flex-col items-center">
             <div class="border-b border-white w-1/6 mt-2 mb-5"></div>
         </div>
         <div class="flex items-center justify-center pb-15 mt-10 gap-8 pr-15 pl-15">
-            <div class="max-w-sm w-1/3 lg:max-w-full lg:flex">
+            <div class="max-w-sm w-1/3 lg:max-w-full lg:flex" data-aos="fade-left" data-aos-duration="1200">
                 <div class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-gray-400 bg-white rounded-b-none rounded-xl p-4 flex flex-col justify-between leading-normal">
                     <div class="mb-8 font-quicksand">
                         <p class="text-sm text-black flex items-center">
@@ -118,7 +118,7 @@
                     </div>
                 </div>
             </div>
-            <div class="max-w-sm w-1/3 lg:max-w-full lg:flex">
+            <div class="max-w-sm w-1/3 lg:max-w-full lg:flex" data-aos="fade-left" data-aos-duration="1600">
                 <div class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-gray-400 bg-white rounded-b-none rounded-xl p-4 flex flex-col justify-between leading-normal">
                     <div class="mb-8 font-quicksand">
                         <p class="text-sm text-black flex items-center">
@@ -129,7 +129,7 @@
                     </div>
                 </div>
             </div>
-            <div class="max-w-sm w-1/3 lg:max-w-full lg:flex">
+            <div class="max-w-sm w-1/3 lg:max-w-full lg:flex" data-aos="fade-left" data-aos-duration="2000">
                 <div class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-gray-400 bg-white rounded-b-none rounded-xl p-4 flex flex-col justify-between leading-normal">
                     <div class="mb-8 font-quicksand">
                         <p class="text-sm text-black flex items-center">
