@@ -239,6 +239,96 @@
             </div>
         </section>
         <div class="col-12 col-md-6 order-md-1 order-last">
+            <h3>Edit Pricelist Creative Space Category</h3>
+            <p class="text-subtitle text-muted">
+                Gunakan posting editor ini untuk melakukan editing
+                info tentang pricelist creative space yang telah disediakan.
+            </p>
+        </div>
+        <section class="section">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">Edit Creative Space Pricelist Info</h4>
+                        </div>
+                        <div class="card-body">
+                            <form action="{{ route('editCreativeSpace', $creativespaces->id) }}" method="POST">
+                                @csrf
+                                @method('PUT')
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Title Header</label>
+                                    <input type="text" name="title" id="name" class="form-control"
+                                        placeholder="Isi Title Disini">
+                                </div>
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Fitur 1</label>
+                                    <input type="text" name="tagone" id="name" class="form-control"
+                                        placeholder="Isi Fitur Yang Diberikan">
+                                </div>
+                                <div class="form-group">
+                                    <textarea name="descone" id="default" cols="30" rows="10" placeholder="Isi Deskripsi Fitur"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Fitur 2</label>
+                                    <input type="text" name="tagtwo" id="name" class="form-control"
+                                        placeholder="Isi Fitur Yang Diberikan">
+                                </div>
+                                <div class="form-group">
+                                    <textarea name="desctwo" id="default" cols="30" rows="10" placeholder="Isi Deskripsi Fitur"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Fitur 3</label>
+                                    <input type="text" name="tagthree" id="name" class="form-control"
+                                        placeholder="Isi Fitur Yang Diberikan">
+                                </div>
+                                <div class="form-group">
+                                    <textarea name="descthree" id="default" cols="30" rows="10" placeholder="Isi Deskripsi Fitur"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Fitur 4</label>
+                                    <input type="text" name="tagfour" id="name" class="form-control"
+                                        placeholder="Isi Fitur Yang Diberikan">
+                                </div>
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Fitur 5</label>
+                                    <input type="text" name="tagfive" id="name" class="form-control"
+                                        placeholder="Isi Fitur Yang Diberikan">
+                                </div>
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Unit</label>
+                                    <input type="text" name="unit" id="name" class="form-control"
+                                        placeholder="Isi dapat berapa unit">
+                                </div>
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Harga</label>
+                                    <input type="text" name="price" id="name" class="form-control"
+                                        placeholder="Harga yang diberikan">
+                                </div>
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Unit Kedua</label>
+                                    <input type="text" name="unitprice" id="name" class="form-control"
+                                        placeholder="Isi dapat berapa unit">
+                                </div>
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Harga</label>
+                                    <input type="text" name="pricetwo" id="name" class="form-control"
+                                        placeholder="Harga yang diberikan">
+                                </div>
+                                <div class="form-group">
+                                    <textarea name="descpricetwo" id="default" cols="30" rows="10"
+                                        placeholder="Isi Deskripsi Paket Tersebut"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary">Simpan</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="col-12 col-md-6 order-md-1 order-last">
             <h3>Upload Foto</h3>
             <p class="text-subtitle text-muted">
                 Silahkan masukan foto dengan rename sesuai dengan yang dibutuhkan.

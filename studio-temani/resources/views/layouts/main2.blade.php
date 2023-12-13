@@ -22,9 +22,9 @@
 </head>
 
 <body class="scroll-smooth scrollbar scrollbar-thin scrollbar-thumb-slate-950 scrollbar-track-white">
-    @include('partials.navbar')
+    @include('partials.navbar2')
     <div>
-        @yield('container')
+        @yield('container2')
     </div>
     @include('partials.footer')
 </body>

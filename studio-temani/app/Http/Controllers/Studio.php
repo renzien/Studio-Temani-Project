@@ -7,6 +7,7 @@ use App\Models\PricelistHome;
 use App\Models\Inquiry;
 use App\Models\Family;
 use App\Models\SelfPhoto;
+use App\Models\CreativeSpace;
 
 class Studio extends Controller
 {
@@ -24,7 +25,8 @@ class Studio extends Controller
             'pricelisthomes' => PricelistHome::find(1),
             'inquirys' => Inquiry::find(1),
             'familys' => Family::find(1),
-            'selfphotos' => SelfPhoto::find(1)
+            'selfphotos' => SelfPhoto::find(1),
+            'creativespaces' => CreativeSpace::find(1),
         ];
 
         return view('pricelist', $post);

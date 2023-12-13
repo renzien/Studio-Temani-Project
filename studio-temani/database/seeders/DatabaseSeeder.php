@@ -14,6 +14,7 @@ use App\Models\PricelistHome;
 use App\Models\Inquiry;
 use App\Models\Family;
 use App\Models\SelfPhoto;
+use App\Models\CreativeSpace;
 
 class DatabaseSeeder extends Seeder
 {
@@ -103,6 +104,24 @@ class DatabaseSeeder extends Seeder
             'descprice' => 'Dapat 1 Samsung Galaxy Flip',
             'unitprice' => '3 - 4 Pax',
             'pricetwo' => '650K',
+            'descpricetwo' => 'Dapat 2 Mobil Purrarri',
+            'photo' => 'bg-hero-2.jpg'
+        ]);
+
+        CreativeSpace::create([
+            'title' => 'Sesi Foto Creative Space',
+            'tagone' => '//Gratis Semua Studio',
+            'descone' => 'Termasuk semua props',
+            'tagtwo' => '//Gratis pakai semua peralatan dan aksesoris',
+            'desctwo' => 'Lighting, Kamera, dll',
+            'tagthree' => '//Diizinkan membawa peralatan sendiri',
+            'descthree' => 'Jangan lupa kontak ngab',
+            'tagfour' => '//Gratis 1 Fotografer',
+            'tagfive' => '//Gratis 1 Asisten',
+            'unit' => '1 - 2 Jam',
+            'price' => '500K',
+            'unitprice' => '3 - 4 Jam',
+            'pricetwo' => '800K',
             'descpricetwo' => 'Dapat 2 Mobil Purrarri',
             'photo' => 'bg-hero-2.jpg'
         ]);

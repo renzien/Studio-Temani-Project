@@ -9,6 +9,7 @@ use App\Models\Studio;
 use App\Models\Pricelist;
 use App\Models\PricelistHome;
 use App\Models\SelfPhoto;
+use App\Models\CreativeSpace;
 use App\Models\Family;
 use App\Models\Inquiry;
 use App\Models\Contact;
@@ -33,6 +34,7 @@ class Posting extends Controller
             'inquirys' => Inquiry::find(1),
             'familys' => Family::find(1),
             'selfphotos' => SelfPhoto::find(1),
+            'creativespaces' => CreativeSpace::find(1),
         ];
 
         return view('admin.layouts.adminprice', $postprice);
@@ -148,6 +150,28 @@ class Posting extends Controller
         ];
 
         $selfphoto->update($data);
+        return redirect('/adminprice');
+    }
+
+    public function editCreativeSpace(Request $request, CreativeSpace $creativespace) {
+        $data = [
+            'title' => $request->input('title'),
+            'tagone' => $request->input('tagone'),
+            'descone' => $request->input('descone'),
+            'tagtwo' => $request->input('tagtwo'),
+            'desctwo' => $request->input('desctwo'),
+            'tagthree' => $request->input('tagthree'),
+            'descthree' => $request->input('descthree'),
+            'tagfour' => $request->input('tagfour'),
+            'tagfive' => $request->input('tagfive'),
+            'unit' => $request->input('unit'),
+            'price' => $request->input('price'),
+            'unitprice' => $request->input('unitprice'),
+            'pricetwo' => $request->input('pricetwo'),
+            'descpricetwo' => $request->input('descpricetwo'),
+        ];
+
+        $creativespace->update($data);
         return redirect('/adminprice');
     }
 }

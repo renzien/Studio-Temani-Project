@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('layouts.main2')
 @section('container')
     <header class="h-screen" style="background-image: url('assets/img/bg-update.png'); background-position: center; background-repeat: no-repeat; background-size: cover;">
         <div class="flex items-center justify-center pt-20">

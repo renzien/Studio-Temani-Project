@@ -135,42 +135,49 @@
     <section class="grid grid-cols-2">
         <div class="text-black pl-10">
             <div class="flex flex-col items-center pt-22">
-                <h1 class="font-quicksand text-4xl font-bold leading-normal">Creative Studio Space</h1>
+                <h1 class="font-quicksand text-4xl font-bold leading-normal" data-aos="fade-left" data-aos-duration="600">{{ $creativespaces->title }}</h1>
                 <div class="border-b py-1 w-1/6 "></div>
             </div>
             <div class="text-justify py-10 ml-20 mr-28">
-                <div class="font-quicksand py-8">
-                    <h3 class="text-2xl font-bold leading-normal">//Free use all studio</h3>
-                    <p class="text-lg leading-normal">Inc. All Props</p>
+                <div class="font-quicksand py-8" data-aos="fade-down" data-aos-duration="700">
+                    <h3 class="text-2xl font-bold leading-normal">{{ $creativespaces->tagone }}</h3>
+                    <div class="text-lg leading-normal">
+                        {!! $creativespaces->descone !!}
+                    </div>
                 </div>
-                <div class="font-quicksand pb-15">
-                    <h3 class="text-2xl font-bold leading-normal">//Free use available props & tools</h3>
-                    <p class="text-lg leading-normal">Lighting, Tripod, Stool, dan Backdrop</p>
+                <div class="font-quicksand pb-15" data-aos="fade-down" data-aos-duration="800">
+                    <h3 class="text-2xl font-bold leading-normal">{{ $creativespaces->tagtwo }}</h3>
+                    <div class="text-lg leading-normal">
+                        {!! $creativespaces->desctwo !!}
+                    </div>
                 </div>
-                <div class="font-quicksand pb-15">
-                    <h3 class="text-2xl font-bold leading-normal">//Allowed bring your properties</h3>
-                    <p class="text-lg leading-normal">Please contact us in advance</p>
+                <div class="font-quicksand pb-15" data-aos="fade-down" data-aos-duration="900">
+                    <h3 class="text-2xl font-bold leading-normal">{{ $creativespaces->tagthree }}</h3>
+                    <div class="text-lg leading-normal">
+                        {!! $creativespaces->descthree !!}
+                    </div>
                 </div>
-                <div class="font-quicksand pb-15">
-                    <h3 class="text-2xl font-bold leading-normal">//Extra hours charge apply</h3>
+                <div class="font-quicksand pb-15" data-aos="fade-down" data-aos-duration="1000">
+                    <h3 class="text-2xl font-bold leading-normal">{{ $creativespaces->tagfour }}</h3>
                 </div>
-                <div class="font-quicksand pb-15">
-                    <h3 class="text-2xl font-bold leading-normal">//Changing room available</h3>
+                <div class="font-quicksand pb-15" data-aos="fade-down" data-aos-duration="1100">
+                    <h3 class="text-2xl font-bold leading-normal">{{ $creativespaces->tagfive }}</h3>
                 </div>
                 <div class="font-quicksand">
-                    <div class="flex flex-row">
-                        <h3 class="text-2xl font-bold leading-normal">2 Hours</h3>
-                        <h3 class="text-2xl font-bold leading-normal pl-22">250k</h3>
+                    <div class="flex flex-row" data-aos="fade-down" data-aos-duration="1200">
+                        <h3 class="text-2xl font-bold leading-normal">{{ $creativespaces->unit }}</h3>
+                        <h3 class="text-2xl font-bold leading-normal pl-22">{{ $creativespaces->price }}</h3>
                     </div>
                 </div>
-                <div class="border-b py-3 w-3/6"></div>
+                <div class="border-b py-3 w-3/5"></div>
                 <div class="font-quicksand py-5">
-                    <div class="flex flex-row">
-                        <h3 class="text-2xl font-bold leading-normal">3 Hours</h3>
-                        <h3 class="text-2xl font-bold leading-normal pl-22">350k</h3>
+                    <div class="flex flex-row" data-aos="fade-down" data-aos-duration="1300">
+                        <h3 class="text-2xl font-bold leading-normal">{{ $creativespaces->unitprice }}</h3>
+                        <h3 class="text-2xl font-bold leading-normal pl-22">{{ $creativespaces->pricetwo }}</h3>
                     </div>
-                    <p class="text-lg leading-normal mt-5">//For rent price above 3 hours,
-                        please contact us</p>
+                    <div class="text-lg leading-normal mt-5" data-aos="fade-down" data-aos-duration="1400">
+                        {!! $creativespaces->descpricetwo !!}
+                    </div>
                 </div>
             </div>
         </div>

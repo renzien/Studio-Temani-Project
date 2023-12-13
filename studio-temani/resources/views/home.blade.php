@@ -44,8 +44,9 @@
                 {!! $studios->desc !!}
             </div>
             <div class="py-28 px-20">
-                <button class="bg-slate-900 hover:bg-black text-white font-quicksand font-bold py-2 px-4 mr-5 rounded-lg"
-                    data-aos="fade-right" data-aos-duration="1500">Baca Selengkapnya</button>
+                <a href="/studio"><button
+                        class="bg-slate-900 hover:bg-black text-white font-quicksand font-bold py-2 px-4 mr-5 rounded-lg"
+                        data-aos="fade-right" data-aos-duration="1500">Baca Selengkapnya</button></a>
             </div>
         </div>
     </section>
