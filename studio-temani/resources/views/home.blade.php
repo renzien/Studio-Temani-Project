@@ -108,7 +108,7 @@
                     </li>
                     <li>
                         <i class="ri-whatsapp-line"></i>
-                        <a href="">Whatsapp</a>
+                        <a href="https://wa.me/message/YLINTHJ356G7P1">Whatsapp</a>
                     </li>
                     <li>
                         <i class="ri-linkedin-box-line"></i>

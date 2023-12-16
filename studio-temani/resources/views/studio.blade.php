@@ -11,14 +11,14 @@
             </div>
             <div class="font-quicksand text-white pb-27.5 pt-15">
                 <div class="flex items-center justify-center">
-                    <h1 class="font-light text-3xl" data-aos="fade-down" data-aos-duration="1100">Studio Temani</h1>
+                    <h1 class="font-light text-3xl" data-aos="fade-down" data-aos-duration="1100">{{ $homestudios->title }}</h1>
                 </div>
-                <div class="flex items-center justify-center">
-                    <h1 class="font-bold text-3xl" data-aos="fade-down" data-aos-duration="1200">Feature & Studio Assets</h1>
+                <div class="flex items-center justify-center font-bold text-3xl text-center pr-20 pl-20" data-aos="fade-down" data-aos-duration="1200">
+                    {!! $homestudios->tagline !!}
                 </div>
             </div>
             <div class="flex items-center justify-center pb-34.5" data-aos="flip-right" data-aos-duration="1300">
-                <a href="/book"><button class="bg-white hover:bg-slate-100 text-black font-quicksand font-bold py-2 px-4 mr-5 rounded-lg">Booking Now</button></a>
+                <a href="/book"><button class="bg-white hover:bg-slate-100 text-black font-quicksand font-bold py-2 px-4 mr-5 rounded-lg">Pesan Sekarang</button></a>
             </div>
         </div>
         <div class="studio text-black"
@@ -27,24 +27,23 @@
     </header>
     <section class="grid grid-cols-2">
         <div class="pt-30 pl-20 font-quicksand">
-            <h1 class="font-bold text-4xl text-black" data-aos="fade-right" data-aos-duration="800">Studio Equipment List</h1>
-            <h2 class="font-light text-2xl text-black" data-aos="fade-right" data-aos-duration="900">You can check it here :</h2>
+            <h1 class="font-bold text-4xl text-black" data-aos="fade-right" data-aos-duration="800">{{ $studioequips->title }}</h1>
+            <div class="font-light text-2xl text-black" data-aos="fade-right" data-aos-duration="900">
+                {!! $studioequips->tagline  !!}
+            </div>
             <div class="font-normal text-xl leading-normal text-black pt-20">
                 <ul class="list-disc list-outside ml-5 flex flex-col gap-3">
-                    <li data-aos="fade-down" data-aos-duration="1000">Flash Light Godox SKII400</li>
-                    <li data-aos="fade-down" data-aos-duration="1100">Softbox Lantern</li>
-                    <li data-aos="fade-down" data-aos-duration="1200">Continuos Light Imbex</li>
-                    <li data-aos="fade-down" data-aos-duration="1300">Tripod Backdrop</li>
-                    <li data-aos="fade-down" data-aos-duration="1400">Many Available Background</li>
-                    <li data-aos="fade-down" data-aos-duration="1500">Sony Alpha 7II</li>
+                    <li data-aos="fade-down" data-aos-duration="1000">{{ $studioequips->list1 }}</li>
+                    <li data-aos="fade-down" data-aos-duration="1100">{{ $studioequips->list2 }}</li>
+                    <li data-aos="fade-down" data-aos-duration="1200">{{ $studioequips->list3 }}</li>
+                    <li data-aos="fade-down" data-aos-duration="1300">{{ $studioequips->list4 }}</li>
+                    <li data-aos="fade-down" data-aos-duration="1400">{{ $studioequips->list5 }}</li>
+                    <li data-aos="fade-down" data-aos-duration="1500">{{ $studioequips->list6 }}</li>
                 </ul>
             </div>
-            <p class="font-normal text-xl leading-normal text-black pt-10 text-justify" data-aos="fade-down" data-aos-duration="800">Studio Temani dilengkapi dengan peralatan 
-                fotografi terkini untuk memastikan hasil yang luar biasa dalam setiap pemotretan. 
-                Dari kamera profesional, pencahayaan studio hingga perlengkapan pendukung lainnya, 
-                kami menyediakan fasilitas terbaik demi mendukung kreasi dan kualitas visual yang tak tertandingi. 
-                Dengan peralatan yang handal, kami memastikan setiap momen yang diabadikan di Studio Temani menjadi 
-                pengalaman yang memukau.</p>
+            <div class="font-normal text-xl leading-normal text-black pt-10 text-justify" data-aos="fade-down" data-aos-duration="800">
+                {!! $studioequips->desc !!}
+            </div>
         </div>
         <div class="flex items-center justify center pt-25 mb-28 pl-20" data-aos="flip-right" data-aos-duration="1000">
             <img src="assets/img/studio-rectangle.png" alt="Studio Temani">

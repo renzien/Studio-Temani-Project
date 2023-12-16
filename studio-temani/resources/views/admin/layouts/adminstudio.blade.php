@@ -5,10 +5,10 @@
         <div class="page-title">
             <div class="row">
                 <div class="col-12 col-md-6 order-md-1 order-last">
-                    <h3>Edit Studio Posting</h3>
+                    <h3>Edit Judul Studio Posting</h3>
                     <p class="text-subtitle text-muted">
                         Gunakan posting editor ini untuk melakukan editing
-                        info tentang pricelist yang telah disediakan.
+                        info judul studio yang telah disediakan.
                     </p>
                 </div>
                 <div class="col-12 col-md-6 order-md-2 order-first">
@@ -33,17 +33,31 @@
                             <h4 class="card-title">Edit Judul Studio</h4>
                         </div>
                         <div class="card-body">
-                            <textarea name="" id="default" cols="30" rows="10"></textarea>
+                            <form action="{{ route('editHomeStudio', $homestudios->id) }}" method="POST">
+                                @csrf
+                                @method('PUT')
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Title Header</label>
+                                    <input type="text" name="title" id="name" class="form-control"
+                                        placeholder="Isi Title">
+                                </div>
+                                <div class="form-group">
+                                    <textarea name="tagline" id="default" cols="30" rows="10" placeholder="Isi Tagline"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary">Simpan</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <div class="col-12 col-md-6 order-md-1 order-last">
-            <h3>Edit Equipment List</h3>
+            <h3>Edit Studio Equipment List</h3>
             <p class="text-subtitle text-muted">
                 Gunakan posting editor ini untuk melakukan editing
-                info tentang Equipment yang telah disediakan.
+                info tentang Studio Equipment yang telah disediakan.
             </p>
         </div>
         <section class="section">
@@ -51,18 +65,57 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <h4 class="card-title">Edit Judul Equipment List</h4>
+                            <h4 class="card-title">Edit Judul Studio</h4>
                         </div>
                         <div class="card-body">
-                            <textarea name="" id="default" cols="30" rows="10"></textarea>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header">
-                            <h4 class="card-title">Edit Deskripsi Equipment List</h4>
-                        </div>
-                        <div class="card-body">
-                            <textarea name="" id="default" cols="30" rows="10"></textarea>
+                            <form action="{{ route('editStudioEquip', $studioequips->id) }}" method="POST">
+                                @csrf
+                                @method('PUT')
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Title Header</label>
+                                    <input type="text" name="title" id="name" class="form-control"
+                                        placeholder="Isi Title">
+                                </div>
+                                <div class="form-group">
+                                    <textarea name="tagline" id="default" cols="30" rows="10" placeholder="Isi Tagline"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="name" class="form-label">List 1 Text</label>
+                                    <input type="text" name="list1" id="name" class="form-control"
+                                        placeholder="Isi Title">
+                                </div>
+                                <div class="form-group">
+                                    <label for="name" class="form-label">List 2 Text</label>
+                                    <input type="text" name="list2" id="name" class="form-control"
+                                        placeholder="Isi Title">
+                                </div>
+                                <div class="form-group">
+                                    <label for="name" class="form-label">List 3 Text</label>
+                                    <input type="text" name="list3" id="name" class="form-control"
+                                        placeholder="Isi Title">
+                                </div>
+                                <div class="form-group">
+                                    <label for="name" class="form-label">List 4 Text</label>
+                                    <input type="text" name="list4" id="name" class="form-control"
+                                        placeholder="Isi Title">
+                                </div>
+                                <div class="form-group">
+                                    <label for="name" class="form-label">List 5 Text</label>
+                                    <input type="text" name="list5" id="name" class="form-control"
+                                        placeholder="Isi Title">
+                                </div>
+                                <div class="form-group">
+                                    <label for="name" class="form-label">List 6 Text</label>
+                                    <input type="text" name="list6" id="name" class="form-control"
+                                        placeholder="Isi Title">
+                                </div>
+                                <div class="form-group">
+                                    <textarea name="desc" id="default" cols="30" rows="10" placeholder="Isi Deskripsi Tentang List Diatas"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary">Simpan</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>

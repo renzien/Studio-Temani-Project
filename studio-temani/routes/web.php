@@ -56,7 +56,10 @@ Route::put('/adminprice/{family}/editfamily', [Posting::class, 'editFamily'])->n
 Route::put('/adminprice/{selfphoto}/editselfphoto', [Posting::class, 'editSelfPhoto'])->name('editSelfPhoto');
 Route::put('/adminprice/{creativespace}/editcreativespace', [Posting::class, 'editCreativeSpace'])->name('editCreativeSpace');
 
+// Studio Posting
 Route::get('/adminstudio', [Posting::class, 'studio']);
+Route::put('/adminstudio/{homestudio}', [Posting::class, 'editHomeStudio'])->name('editHomeStudio');
+Route::put('/adminstudio/{studioequip}/editstudioequip', [Posting::class, 'editStudioEquips'])->name('editStudioEquip');
 
 // Katalog
 Route::get('/selfphoto', [Katalog::class, 'selfphoto']);

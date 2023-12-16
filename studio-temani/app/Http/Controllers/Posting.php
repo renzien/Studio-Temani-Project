@@ -10,6 +10,8 @@ use App\Models\Pricelist;
 use App\Models\PricelistHome;
 use App\Models\SelfPhoto;
 use App\Models\CreativeSpace;
+use App\Models\HomeStudio;
+use App\Models\StudioEquip;
 use App\Models\Family;
 use App\Models\Inquiry;
 use App\Models\Contact;
@@ -41,7 +43,12 @@ class Posting extends Controller
     }
 
     public function studio() {
-        return view('admin.layouts.adminstudio');
+        $poststudio = [
+            'homestudios' => HomeStudio::find(1),
+            'studioequips' => StudioEquip::find(1),
+        ];
+
+        return view('admin.layouts.adminstudio', $poststudio);
     }
 
     // Update Home
@@ -173,5 +180,34 @@ class Posting extends Controller
 
         $creativespace->update($data);
         return redirect('/adminprice');
+    }
+
+    // Update Studio
+
+    public function editHomeStudio(Request $request, HomeStudio $homestudio) {
+        $data = [
+            'title' => $request->input('title'),
+            'tagline' => $request->input('tagline')
+        ];
+
+        $homestudio->update($data);
+        return redirect('/adminstudio');
+    }
+
+    public function editStudioEquips(Request $request, StudioEquip $studioequip){
+        $data = [
+            'title' => $request->input('title'),
+            'tagline' => $request->input('tagline'),
+            'list1' => $request->input('list1'),
+            'list2' => $request->input('list2'),
+            'list3' => $request->input('list3'),
+            'list4' => $request->input('list4'),
+            'list5' => $request->input('list5'),
+            'list6' => $request->input('list6'),
+            'desc' => $request->input('desc'),
+        ];
+
+        $studioequip->update($data);
+        return redirect('/adminstudio');
     }
 }

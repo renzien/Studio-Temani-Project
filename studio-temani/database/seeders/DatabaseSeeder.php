@@ -15,6 +15,8 @@ use App\Models\Inquiry;
 use App\Models\Family;
 use App\Models\SelfPhoto;
 use App\Models\CreativeSpace;
+use App\Models\HomeStudio;
+use App\Models\StudioEquip;
 
 class DatabaseSeeder extends Seeder
 {
@@ -123,6 +125,25 @@ class DatabaseSeeder extends Seeder
             'unitprice' => '3 - 4 Jam',
             'pricetwo' => '800K',
             'descpricetwo' => 'Dapat 2 Mobil Purrarri',
+            'photo' => 'bg-hero-2.jpg'
+        ]);
+
+        HomeStudio::create([
+            'title' => 'Studio Temani Cabang Nihon',
+            'tagline' => 'Yang punya oda nobunaga',
+            'photo' => 'bg-hero-2.jpg'
+        ]);
+
+        StudioEquip::create([
+            'title' => 'Perlengkapan Studio Temani',
+            'tagline' => 'Kalian bisa cek disini :',
+            'list1' => 'Lampu Flashlight Godox SKII400',
+            'list2' => 'Softbox Lantern',
+            'list3' => 'Continuous Light Imbex',
+            'list4' => 'Tripod Kaki 3, Backdrop',
+            'list5' => 'Banyak Background',
+            'list6' => 'Kamera Canon 5D Mark IV',
+            'desc' => 'Studio Temani memiliki perlengkapan yang lengkap untuk kebutuhan fotografi kalian. Kalian bisa cek disini :',
             'photo' => 'bg-hero-2.jpg'
         ]);
     }

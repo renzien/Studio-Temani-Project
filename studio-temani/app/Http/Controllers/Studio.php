@@ -8,13 +8,21 @@ use App\Models\Inquiry;
 use App\Models\Family;
 use App\Models\SelfPhoto;
 use App\Models\CreativeSpace;
+use App\Models\HomeStudio;
+use App\Models\StudioEquip;
 
 class Studio extends Controller
 {
     public function studio() {
-        return view('studio', [
-            "title" => "Studio"
-        ]);
+        // return view('studio', [
+        //     "title" => "Studio"
+        // ]);
+        $post = [
+            'homestudios' => HomeStudio::find(1),
+            'studioequips' => StudioEquip::find(1),
+        ];
+
+        return view('studio', $post);
     }
 
     public function pricelist() {
