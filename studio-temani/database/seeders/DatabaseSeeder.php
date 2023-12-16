@@ -11,6 +11,7 @@ use App\Models\Studio;
 use App\Models\Pricelist;
 use App\Models\Contact;
 use App\Models\PricelistHome;
+use App\Models\Quote;
 use App\Models\Inquiry;
 use App\Models\Family;
 use App\Models\SelfPhoto;
@@ -145,6 +146,11 @@ class DatabaseSeeder extends Seeder
             'list6' => 'Kamera Canon 5D Mark IV',
             'desc' => 'Studio Temani memiliki perlengkapan yang lengkap untuk kebutuhan fotografi kalian. Kalian bisa cek disini :',
             'photo' => 'bg-hero-2.jpg'
+        ]);
+
+        Quote::create([
+            'quote' => 'Kita tidak akan pernah tahu, sampai kita mencoba.',
+            'author' => 'Albert Einstein'
         ]);
     }
 }

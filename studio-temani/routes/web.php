@@ -60,6 +60,7 @@ Route::put('/adminprice/{creativespace}/editcreativespace', [Posting::class, 'ed
 Route::get('/adminstudio', [Posting::class, 'studio']);
 Route::put('/adminstudio/{homestudio}', [Posting::class, 'editHomeStudio'])->name('editHomeStudio');
 Route::put('/adminstudio/{studioequip}/editstudioequip', [Posting::class, 'editStudioEquips'])->name('editStudioEquip');
+Route::put('/adminstudio/{quote}/editquote', [Posting::class, 'editQuote'])->name('editQuote');
 
 // Katalog
 Route::get('/selfphoto', [Katalog::class, 'selfphoto']);

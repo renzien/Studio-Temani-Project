@@ -133,10 +133,24 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <h4 class="card-title">Edit Text Quotes</h4>
+                            <h4 class="card-title">Edit Quotes Studio</h4>
                         </div>
                         <div class="card-body">
-                            <textarea name="" id="default" cols="30" rows="10"></textarea>
+                            <form action="{{ route('editQuote', $quotes->id) }}" method="POST">
+                                @csrf
+                                @method('PUT')
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Author Name</label>
+                                    <input type="text" name="author" id="name" class="form-control"
+                                        placeholder="Nama Author">
+                                </div>
+                                <div class="form-group">
+                                    <textarea name="quote" id="default" cols="30" rows="10" placeholder="Masukkan Quotes"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary">Simpan</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>

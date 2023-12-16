@@ -51,13 +51,15 @@
     </section>
     <section class="w-full" style="background-image: url('assets/img/studio_quotes.png'); background-repeat: no-repeat;">
         <div class="flex flex-col items-center text-white font-quicksand" data-aos="fade-right" data-aos-duration="1100">
-            <h1 class="text-3xl font-bold pt-30 pl-35 pr-35 mb-10 text-center">“A thing that you see in my pictures is that I was not afraid to fall in love with these people.”</h1>
+            <div class="text-3xl font-bold pt-30 pl-35 pr-35 mb-10 text-center">
+                {!! $quotes->quote  !!}
+            </div>
         </div>
         <div class="flex flex-col items-center">
             <div class="border-b border-white w-2/6 mb-5"></div>
         </div>
         <div class="flex flex-col items-center text-white font-quicksand pb-30" data-aos="fade-left" data-aos-duration="1200">
-            <h2 class="text-2xl font-light pt-5">- Annie Leibovitz -</h2>
+            <h2 class="text-2xl font-light pt-5">{{ $quotes->author }}</h2>
         </div>
     </section>
     <section class="font-quicksand pb-30">

@@ -10,6 +10,7 @@ use App\Models\Pricelist;
 use App\Models\PricelistHome;
 use App\Models\SelfPhoto;
 use App\Models\CreativeSpace;
+use App\Models\Quote;
 use App\Models\HomeStudio;
 use App\Models\StudioEquip;
 use App\Models\Family;
@@ -46,6 +47,7 @@ class Posting extends Controller
         $poststudio = [
             'homestudios' => HomeStudio::find(1),
             'studioequips' => StudioEquip::find(1),
+            'quotes' => Quote::find(1),
         ];
 
         return view('admin.layouts.adminstudio', $poststudio);
@@ -208,6 +210,16 @@ class Posting extends Controller
         ];
 
         $studioequip->update($data);
+        return redirect('/adminstudio');
+    }
+
+    public function editQuote(Request $request, Quote $quote){
+        $data = [
+            'quote' => $request->input('quote'),
+            'author' => $request->input('author'),
+        ];
+
+        $quote->update($data);
         return redirect('/adminstudio');
     }
 }
