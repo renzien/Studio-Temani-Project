@@ -11,6 +11,7 @@ use App\Models\Studio;
 use App\Models\Pricelist;
 use App\Models\Contact;
 use App\Models\PricelistHome;
+use App\Models\FamilyPhoto;
 use App\Models\Quote;
 use App\Models\Package;
 use App\Models\Inquiry;
@@ -156,7 +157,13 @@ class DatabaseSeeder extends Seeder
 
         Package::create([
             'title' => 'Paket Studio Temani',
-            'descpack' => 'Studio Temani memiliki paket yang bisa kalian pilih sesuai kebutuhan kalian. Kalian bisa cek disini :'
+            'descpack' => 'Temukan paket-paket eksklusif kami yang dirancang khusus untuk memenuhi berbagai kebutuhan fotografi Anda. Dari paket pernikahan yang romantis hingga sesi potret keluarga yang hangat, setiap paket memberikan pengalaman fotografi yang tak terlupakan.'
+        ]);
+
+        FamilyPhoto::create([
+            'title' => 'Sesi Foto Keluarga',
+            'descpack' => 'Sesi Foto Keluarga, merupakan foto sesi dengan foto keluarga yang bersangkutan dengan harga yang sangat amat terjangkau. Dengan harga yang terjangkau, kalian bisa mendapatkan 3 Print Foto 4R untuk 5 - 7 Pax, dan 5 Print Foto 4R untuk 8 - 10 Pax.',
+            'photo' => 'bg-hero-2.jpg'
         ]);
     }
 }

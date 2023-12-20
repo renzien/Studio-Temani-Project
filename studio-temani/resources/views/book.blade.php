@@ -30,12 +30,10 @@
             <div class="max-w-sm rounded-lg overflow-hidden shadow-lg" data-aos="flip-left" data-aos-duration="1000">
                 <img src="assets/img/family-photo2.png" alt="Studio Temani" class="w-full">
                 <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2">Family Photo Session</div>
-                    <p class="text-black text-base text-justify">Family Photo Session merupakan foto sesi yang bersangkutan
-                        dengan keluarganya ya gais.
-                        Kalo gaada keluarganya namanya self-photo. Kalo gaada dirinya namanya landscape photo. Kalo gaada
-                        landscape namanya foto kosong.
-                    </p>
+                    <div class="font-bold text-xl mb-2">{{ $familyphotos->title }}</div>
+                    <div class="text-black text-base text-justify">
+                        {!! $familyphotos->descpack !!}
+                    </div>
                 </div>
             </div>
             <div class="max-w-sm rounded-lg overflow-hidden shadow-lg" data-aos="flip-left" data-aos-duration="1300">

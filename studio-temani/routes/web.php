@@ -67,10 +67,16 @@ Route::put('/adminstudio/{studioequip}/editstudioequip', [Posting::class, 'editS
 Route::put('/adminstudio/{quote}/editquote', [Posting::class, 'editQuote'])->name('editQuote');
 Route::put('/adminstudio/{package}/editpackage', [Posting::class, 'editPackage'])->name('editPackage');
 
-// Katalog
+// Katalog Self Photo
 Route::get('/selfphoto', [Katalog::class, 'selfphoto']);
+
+// Katalog Family Photo
 Route::get('/familyphoto', [Katalog::class, 'familyphoto']);
+Route::put('/familyphoto/{familyphoto}', [Katalog::class, 'editFamilyPhoto'])->name('editFamilyPhoto');
+
+// Katalog Creative Studio
 Route::get('/creativestudio', [Katalog::class, 'creativestudio']);
+
 
 // Account
 Route::get('/editaccount', [Account::class, 'account']);
