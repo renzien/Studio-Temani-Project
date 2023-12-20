@@ -3,6 +3,7 @@
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\FirstPageController;
 use App\Http\Controllers\Book;
+use App\Http\Controllers\Order;
 use App\Http\Controllers\Studio;
 use App\Http\Controllers\Dashboard;
 use App\Http\Controllers\Posting;
@@ -31,6 +32,9 @@ Route::get('/pricelist', [Studio::class, 'pricelist']);
 
 // Booking
 Route::get('/book', [Book::class, 'book']);
+
+// Order
+Route::get('/check', [Order::class, 'check']);
 
 // Auth
 Route::get('/admin', [Dashboard::class, 'index'])->middleware('auth');
@@ -61,6 +65,7 @@ Route::get('/adminstudio', [Posting::class, 'studio']);
 Route::put('/adminstudio/{homestudio}', [Posting::class, 'editHomeStudio'])->name('editHomeStudio');
 Route::put('/adminstudio/{studioequip}/editstudioequip', [Posting::class, 'editStudioEquips'])->name('editStudioEquip');
 Route::put('/adminstudio/{quote}/editquote', [Posting::class, 'editQuote'])->name('editQuote');
+Route::put('/adminstudio/{package}/editpackage', [Posting::class, 'editPackage'])->name('editPackage');
 
 // Katalog
 Route::get('/selfphoto', [Katalog::class, 'selfphoto']);

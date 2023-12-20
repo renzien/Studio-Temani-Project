@@ -8,6 +8,7 @@ use App\Models\About;
 use App\Models\Studio;
 use App\Models\Pricelist;
 use App\Models\PricelistHome;
+use App\Models\Package;
 use App\Models\SelfPhoto;
 use App\Models\CreativeSpace;
 use App\Models\Quote;
@@ -48,6 +49,7 @@ class Posting extends Controller
             'homestudios' => HomeStudio::find(1),
             'studioequips' => StudioEquip::find(1),
             'quotes' => Quote::find(1),
+            'packages' => Package::find(1),
         ];
 
         return view('admin.layouts.adminstudio', $poststudio);
@@ -220,6 +222,16 @@ class Posting extends Controller
         ];
 
         $quote->update($data);
+        return redirect('/adminstudio');
+    }
+
+    public function editPackage(Request $request, Package $package) {
+        $data = [
+            'title' => $request->input('title'),
+            'descpack' => $request->input('descpack')
+        ];
+
+        $package->update($data);
         return redirect('/adminstudio');
     }
 }

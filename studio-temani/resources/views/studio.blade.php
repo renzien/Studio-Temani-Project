@@ -3,7 +3,7 @@
 @section('container2')
     <header class="grid grid-cols-2">
         <div class="bg-studio-temani">
-            <div class="flex items-center pb-15aos="flip-left" data-aos-duration="1000">
+            <div class="flex items-center pb-15" data-aos="flip-left" data-aos-duration="1000">
                 <div class="flex items-center justify-center pt-15">
                     <img src="assets/img/studio_logo.png" alt="Studio Temani" class="w-1/2" data-aos="fade-down"
                         data-aos-duration="1000">
@@ -18,7 +18,7 @@
                 </div>
             </div>
             <div class="flex items-center justify-center pb-34.5" data-aos="flip-right" data-aos-duration="1300">
-                <a href="/book"><button class="bg-white hover:bg-slate-100 text-black font-quicksand font-bold py-2 px-4 mr-5 rounded-lg">Pesan Sekarang</button></a>
+                <a href="/book"><button class="bg-white hover:bg-slate-100 text-black font-quicksand font-bold py-2 px-4 mr-5 rounded-lg">Booking Now</button></a>
             </div>
         </div>
         <div class="studio text-black"
@@ -64,11 +64,12 @@
     </section>
     <section class="font-quicksand pb-30">
         <div class="flex items-center justify-center" data-aos="fade-down" data-aos-duration="1000">
-            <h1 class="font-bold text-3xl leading-normal pt-22">Our Packages</h1>
+            <h1 class="font-bold text-3xl leading-normal pt-22">{{ $packages->title }}</h1>
         </div>
         <div class="flex items-center justify-center mt-5" data-aos="fade-down" data-aos-duration="1100">
-            <p class="font-normal text-xl leading-normal text-center pl-15 pr-15">Temukan paket-paket eksklusif kami yang dirancang khusus untuk memenuhi berbagai kebutuhan fotografi Anda. 
-                Dari paket pernikahan yang romantis hingga sesi potret keluarga yang hangat, setiap paket memberikan pengalaman fotografi yang tak terlupakan.</p>
+            <div class="font-normal text-xl leading-normal text-center pl-15 pr-15">
+                {!! $packages->descpack  !!}
+            </div>
         </div>
         <div class="grid grid-cols-3 pt-15 pl-15">
             <div class="max-w-sm rounded-lg overflow-hidden shadow-lg" data-aos="flip-left" data-aos-duration="1000">

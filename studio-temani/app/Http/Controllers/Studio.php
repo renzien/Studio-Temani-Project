@@ -8,6 +8,7 @@ use App\Models\Inquiry;
 use App\Models\Family;
 use App\Models\SelfPhoto;
 use App\Models\CreativeSpace;
+use App\Models\Package;
 use App\Models\Quote;
 use App\Models\HomeStudio;
 use App\Models\StudioEquip;
@@ -22,6 +23,7 @@ class Studio extends Controller
             'homestudios' => HomeStudio::find(1),
             'studioequips' => StudioEquip::find(1),
             'quotes' => Quote::find(1),
+            'packages' => Package::find(1),
         ];
 
         return view('studio', $post);

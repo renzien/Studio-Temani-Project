@@ -12,6 +12,7 @@ use App\Models\Pricelist;
 use App\Models\Contact;
 use App\Models\PricelistHome;
 use App\Models\Quote;
+use App\Models\Package;
 use App\Models\Inquiry;
 use App\Models\Family;
 use App\Models\SelfPhoto;
@@ -151,6 +152,11 @@ class DatabaseSeeder extends Seeder
         Quote::create([
             'quote' => 'Kita tidak akan pernah tahu, sampai kita mencoba.',
             'author' => 'Albert Einstein'
+        ]);
+
+        Package::create([
+            'title' => 'Paket Studio Temani',
+            'descpack' => 'Studio Temani memiliki paket yang bisa kalian pilih sesuai kebutuhan kalian. Kalian bisa cek disini :'
         ]);
     }
 }

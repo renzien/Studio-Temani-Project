@@ -157,6 +157,41 @@
             </div>
         </section>
         <div class="col-12 col-md-6 order-md-1 order-last">
+            <h3>Edit Packages Info</h3>
+            <p class="text-subtitle text-muted">
+                Gunakan posting editor ini untuk menambahkan atau
+                mengedit packages yang akan ditampilkan pada halaman
+            </p>
+        </div>
+        <section class="section">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">Edit Package Info</h4>
+                        </div>
+                        <div class="card-body">
+                            <form action="{{ route('editPackage', $packages->id) }}" method="POST">
+                                @csrf
+                                @method('PUT')
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Title Header</label>
+                                    <input type="text" name="title" id="name" class="form-control"
+                                        placeholder="Judul Paket">
+                                </div>
+                                <div class="form-group">
+                                    <textarea name="descpack" id="default" cols="30" rows="10" placeholder="Masukkan Penjelasan Package"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary">Simpan</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="col-12 col-md-6 order-md-1 order-last">
             <h3>Upload Foto</h3>
             <p class="text-subtitle text-muted">
                 Silahkan masukan foto dengan rename sesuai dengan yang dibutuhkan.
