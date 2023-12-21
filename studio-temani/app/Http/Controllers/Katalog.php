@@ -4,11 +4,17 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\FamilyPhoto;
+use App\Models\SelfSession;
+use App\Models\CreaSpace;
 
 class Katalog extends Controller
 {
     public function selfphoto() {
-        return view('admin.layouts.selfad');
+        $post = [
+            'selfsessions' => SelfSession::find(1),
+        ];
+
+        return view('admin.layouts.selfad', $post);
     }
 
     public function familyphoto() {
@@ -20,7 +26,12 @@ class Katalog extends Controller
     }
 
     public function creativestudio() {
-        return view('admin.layouts.creastudio');
+        $post = [
+            'creaspaces' => CreaSpace::find(1),
+        ];
+
+
+        return view('admin.layouts.creastudio', $post);
     }
 
     // Function Family Photo
@@ -31,6 +42,28 @@ class Katalog extends Controller
         ];
 
         $familyphoto->update($data);
-        return redirect('/familyphoto')->with('success', 'Data berhasil diubah');
+        return redirect('/familyphoto');
+    }
+
+    // Function Self Photo
+    public function editSelfSession(Request $request, SelfSession $selfsession) {
+        $data = [
+            'title' => $request->input('title'),
+            'descpack' => $request->input('descpack')
+        ];
+
+        $selfsession->update($data);
+        return redirect('/selfphoto');
+    }
+
+    // Function Creative Space
+    public function editCreaSpace(Request $request, CreaSpace $creaspace) {
+        $data = [
+            'title' => $request->input('title'),
+            'descpack' => $request->input('descpack')
+        ];
+
+        $creaspace->update($data);
+        return redirect('/creativestudio');
     }
 }

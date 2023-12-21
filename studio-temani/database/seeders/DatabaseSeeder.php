@@ -11,6 +11,8 @@ use App\Models\Studio;
 use App\Models\Pricelist;
 use App\Models\Contact;
 use App\Models\PricelistHome;
+use App\Models\CreaSpace;
+use App\Models\SelfSession;
 use App\Models\FamilyPhoto;
 use App\Models\Quote;
 use App\Models\Package;
@@ -163,6 +165,18 @@ class DatabaseSeeder extends Seeder
         FamilyPhoto::create([
             'title' => 'Sesi Foto Keluarga',
             'descpack' => 'Sesi Foto Keluarga, merupakan foto sesi dengan foto keluarga yang bersangkutan dengan harga yang sangat amat terjangkau. Dengan harga yang terjangkau, kalian bisa mendapatkan 3 Print Foto 4R untuk 5 - 7 Pax, dan 5 Print Foto 4R untuk 8 - 10 Pax.',
+            'photo' => 'bg-hero-2.jpg'
+        ]);
+
+        SelfSession::create([
+            'title' => 'Sesi Foto Sendiri',
+            'descpack' => 'Sesi Foto Sendiri, merupakan foto sesi dengan foto sendiri yang bersangkutan dengan harga yang sangat amat terjangkau. Dengan harga yang terjangkau, kalian bisa mendapatkan 1 Samsung Galaxy Flip untuk 1 - 2 Pax, dan 2 Mobil Purrarri untuk 3 - 4 Pax.',
+            'photo' => 'bg-hero-2.jpg'
+        ]);
+
+        CreaSpace::create([
+            'title' => 'Sesi Foto Creative Space',
+            'descpack' => 'Sesi Foto Creative Space, merupakan foto sesi dengan foto creative space yang bersangkutan dengan harga yang sangat amat terjangkau. Dengan harga yang terjangkau, kalian bisa mendapatkan 2 Mobil Purrarri untuk 1 - 2 Jam, dan 2 Mobil Purrarri untuk 3 - 4 Jam.',
             'photo' => 'bg-hero-2.jpg'
         ]);
     }

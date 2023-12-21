@@ -18,7 +18,7 @@
                                 <a href="/admin">Halaman Utama</a>
                             </li>
                             <li class="breadcrumb-item active" aria-current="page">
-                                Katalog
+                                Self-Photo
                             </li>
                         </ol>
                     </nav>
@@ -28,13 +28,22 @@
         <section class="section">
             <div class="row">
                 <div class="col-12">
-                    <div class="card">
-                        <div class="card-header">
-                            <h4 class="card-title">Edit Keterangan Self-Photo</h4>
-                        </div>
-                        <div class="card-body">
-                            <textarea name="" id="default" cols="30" rows="10"></textarea>
-                        </div>
+                    <div class="card-body">
+                        <form action="{{ route('editSelfSession', $selfsessions->id) }}" method="POST">
+                            @csrf
+                            @method('PUT')
+                            <div class="form-group">
+                                <label for="name" class="form-label">Judul Paket</label>
+                                <input type="text" name="title" id="name" class="form-control"
+                                    placeholder="Judul Paket">
+                            </div>
+                            <div class="form-group">
+                                <textarea name="descpack" id="default" cols="30" rows="10" placeholder="Masukkan Penjelasan Package"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary">Simpan</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>

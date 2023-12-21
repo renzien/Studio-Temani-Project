@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('selfsessions', function (Blueprint $table) {
+        Schema::create('creaspaces', function (Blueprint $table) {
             $table->id();
             $table->string('title');
             $table->text('descpack');
@@ -25,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('selfsessions');
+        Schema::dropIfExists('creaspaces');
     }
 };

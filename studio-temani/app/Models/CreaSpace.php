@@ -5,9 +5,9 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class SelfSession extends Model
+class CreaSpace extends Model
 {
     use HasFactory;
     protected $guarded = ['id'];
-    protected $table = 'selfsessions';
+    protected $table = 'creaspaces';
 }

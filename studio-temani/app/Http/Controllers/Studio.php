@@ -8,6 +8,8 @@ use App\Models\Inquiry;
 use App\Models\Family;
 use App\Models\SelfPhoto;
 use App\Models\CreativeSpace;
+use App\Models\SelfSession;
+use App\Models\CreaSpace;
 use App\Models\Package;
 use App\Models\FamilyPhoto;
 use App\Models\Quote;
@@ -26,6 +28,8 @@ class Studio extends Controller
             'quotes' => Quote::find(1),
             'packages' => Package::find(1),
             'familyphotos' => FamilyPhoto::find(1),
+            'selfsessions' => SelfSession::find(1),
+            'creaspaces' => CreaSpace::find(1),
         ];
 
         return view('studio', $post);
