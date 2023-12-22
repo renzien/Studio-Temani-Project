@@ -36,6 +36,6 @@
         </div>
     </section>
     <section class="flex items-end justify-end pr-72.5 pt-10 pb-5">
-        <a href="/book"><button class="bg-slate-900 hover:bg-black text-white font-quicksand font-bold py-2 px-4 mr-5 rounded-lg">Selanjutnya</button></a>
+        <a href="/payment"><button class="bg-slate-900 hover:bg-black text-white font-quicksand font-bold py-2 px-4 mr-5 rounded-lg">Selanjutnya</button></a>
     </section>
 @endsection

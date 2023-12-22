@@ -35,6 +35,7 @@ Route::get('/book', [Book::class, 'book']);
 
 // Order
 Route::get('/check', [Order::class, 'check']);
+Route::get('/payment', [Order::class, 'payment']);
 
 // Auth
 Route::get('/admin', [Dashboard::class, 'index'])->middleware('auth');

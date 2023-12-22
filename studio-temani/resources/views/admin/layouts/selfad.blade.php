@@ -48,7 +48,7 @@
                 </div>
             </div>
         </section>
-        <div class="col-12 col-md-6 order-md-1 order-last">
+        <div class="col-12 col-md-6 order-md-1 mt-5 order-last">
             <h3>Upload Foto</h3>
             <p class="text-subtitle text-muted">
                 Silahkan masukan foto untuk contoh Self-Photo
@@ -59,15 +59,18 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                          <h5 class="card-title">Image Preview</h5>
+                            <h5 class="card-title">Image Preview</h5>
                         </div>
                         <div class="card-content">
-                          <div class="card-body">
-                            <!-- File uploader with image preview -->
-                            <input type="file" class="image-preview-filepond" />
-                          </div>
+                            <div class="card-body">
+                                <!-- File uploader with image preview -->
+                                <input type="file" class="image-preview-filepond" />
+                            </div>
                         </div>
-                      </div>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Upload</button>
+                    </div>
                 </div>
             </div>
         </section>

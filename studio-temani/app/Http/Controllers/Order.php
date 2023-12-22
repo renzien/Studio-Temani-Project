@@ -11,4 +11,10 @@ class Order extends Controller
             "title" => "check"
         ]);
     }
+
+    public function payment() {
+        return view ('payment', [
+            "title" => "payment"
+        ]);
+    }
 }
