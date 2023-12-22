@@ -86,15 +86,18 @@
                 <img src="assets/img/self-photo2.png" alt="Studio Temani" class="w-full">
                 <div class="px-6 py-4">
                     <div class="font-bold text-xl mb-2">{{ $selfsessions->title }}</div>
-                    <p class="text-black text-base text-justify">{{ $selfsessions->descpack }}</p>
+                    <div class="text-black text-base text-justify">
+                        {!! $selfsessions->descpack !!}
+                    </div>
                 </div>
             </div>
             <div class="max-w-sm rounded-lg overflow-hidden shadow-lg" data-aos="flip-left" data-aos-duration="1600">
                 <img src="assets/img/creative-space.png" alt="Studio Temani" class="w-full">
                 <div class="px-6 py-4">
                     <div class="font-bold text-xl mb-2">{{ $creaspaces->title }}</div>
-                    <p class="text-black text-base text-justify">{{ $creaspaces->descpack }}
-                    </p>
+                    <div class="text-black text-base text-justify">
+                        {!! $creaspaces->descpack !!}
+                    </div>
                 </div>
             </div>
         </div>

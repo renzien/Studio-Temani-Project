@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\FamilyPhoto;
 use App\Models\SelfSession;
+use App\Models\CreaSpace;
 
 class Book extends Controller
 {
@@ -15,6 +16,7 @@ class Book extends Controller
         $post = [
             'familyphotos' => FamilyPhoto::find(1),
             'selfsessions' => SelfSession::find(1),
+            'creaspaces' => CreaSpace::find(1),
         ];
 
         return view('book', $post);
