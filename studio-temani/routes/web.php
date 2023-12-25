@@ -6,6 +6,7 @@ use App\Http\Controllers\Book;
 use App\Http\Controllers\Order;
 use App\Http\Controllers\Studio;
 use App\Http\Controllers\Dashboard;
+use App\Http\Controllers\UploadController;
 use App\Http\Controllers\Posting;
 use App\Http\Controllers\Katalog;
 use App\Http\Controllers\Account;
@@ -34,8 +35,10 @@ Route::get('/pricelist', [Studio::class, 'pricelist']);
 Route::get('/book', [Book::class, 'book']);
 
 // Order
-Route::get('/check', [Order::class, 'check']);
-Route::get('/payment', [Order::class, 'payment']);
+Route::get('/check/{book}', [Order::class, 'check'])->name('check');
+// Route::get('/check/payment/{book}', [Order::class, 'payment'])->name('payment');
+Route::post('/pesan', [Order::class, 'store'])->name('pesan');
+
 
 // Auth
 Route::get('/admin', [Dashboard::class, 'index'])->middleware('auth');
@@ -80,10 +83,12 @@ Route::put('/familyphoto/{familyphoto}', [Katalog::class, 'editFamilyPhoto'])->n
 Route::get('/creativestudio', [Katalog::class, 'creativestudio']);
 Route::put('/creativestudio/{creaspace}', [Katalog::class, 'editCreaSpace'])->name('editCreaSpace');
 
-
 // Account
 Route::get('/editaccount', [Account::class, 'account']);
 Route::get('/configacc', [Account::class, 'configacc']);
 
 // Tagihan
 Route::get('/tagihan', [Tagihan::class, 'tagihan']);
+
+// Upload
+Route::post('/upload', [UploadController::class, 'store']);

@@ -62,46 +62,54 @@
                 <h1 class="text-3xl font-bold text-center text-white">Jangan sampai kelewatan!</h1>
                 <p class="text-xl font-base text-center text-white">Untuk memesan silahkan isi form dibawah ini!</p>
             </div>
-            <form action="" method="POST" data-aos="fade-right" data-aos-duration="2000">
+            <form action="{{ route('pesan') }}" method="POST" data-aos="fade-right" data-aos-duration="2000">
+                @csrf
                 <div class="-mx-3 flex flex-wrap">
                     <div class="w-full px-3 sm:w-1/2">
                         <div class="mb-5 text-white">
                             <label for="fullname" class="mb-3 block text-xl font-medium">First Name</label>
-                            <input type="text" name="fullname" id="fName" placeholder="Tulis First Name" class="w-full rounded-lg border border-[#FFFFFF] bg-studio-temani py-3 px-3 text-base font-medium outline-none focus:border-[#808080] focus:shadow-md">
+                            <input type="text" name="fullname" id="fName" placeholder="Tulis First Name"
+                                class="w-full rounded-lg border border-[#FFFFFF] bg-studio-temani py-3 px-3 text-base font-medium outline-none focus:border-[#808080] focus:shadow-md">
                         </div>
                     </div>
                     <div class="w-full px-3 sm:w-1/2">
                         <div class="mb-5 text-white">
                             <label for="lastname" class="mb-3 block text-xl font-medium">Last Name</label>
-                            <input type="text" name="lastname" id="lName" placeholder="Tulis Last Name" class="w-full rounded-lg border border-[#FFFFFF] bg-studio-temani py-3 px-3 text-base font-medium outline-none focus:border-[#808080] focus:shadow-md">
+                            <input type="text" name="lastname" id="lName" placeholder="Tulis Last Name"
+                                class="w-full rounded-lg border border-[#FFFFFF] bg-studio-temani py-3 px-3 text-base font-medium outline-none focus:border-[#808080] focus:shadow-md">
                         </div>
                     </div>
                 </div>
                 <div class="mb-5 text-white">
                     <label for="email" class="mb-3 block text-xl font-medium">Email</label>
-                    <input type="text" name="email" id="email" placeholder="your@example.com" class="w-full appearance-none rounded-lg border border-[#FFFFFF] bg-studio-temani py-3 px-3 text base font-medium outline-none focus:border-[#808080] focus:shadow-md">
+                    <input type="text" name="email" id="email" placeholder="your@example.com"
+                        class="w-full appearance-none rounded-lg border border-[#FFFFFF] bg-studio-temani py-3 px-3 text base font-medium outline-none focus:border-[#808080] focus:shadow-md">
                 </div>
                 <div class="mb-5 text-white">
                     <label for="guest" class="mb-3 block text-xl font-medium">Banyak Orangnya ?</label>
-                    <input type="number" name="guest" id="guest" placeholder="5" min="1" class="w-full appearance-none rounded-lg border border-[#FFFFFF] bg-studio-temani py-3 px-3 text base font-medium outline-none focus:border-[#808080] focus:shadow-md">
+                    <input type="number" name="guest" id="guest" placeholder="5" min="1"
+                        class="w-full appearance-none rounded-lg border border-[#FFFFFF] bg-studio-temani py-3 px-3 text base font-medium outline-none focus:border-[#808080] focus:shadow-md">
                 </div>
                 <div class="-mx-3 flex flex-wrap">
                     <div class="w-full px-3 sm:w-1/2">
                         <div class="mb-5 text-white">
                             <label for="date" class="mb-3 block text-xl font-medium">Tanggal</label>
-                            <input type="date" name="date" id="date" class="w-full appearance-none rounded-lg border border-[#FFFFFF] bg-studio-temani py-3 px-3 text base font-medium outline-none focus:border-[#808080] focus:shadow-md">
+                            <input type="date" name="date" id="date"
+                                class="w-full appearance-none rounded-lg border border-[#FFFFFF] bg-studio-temani py-3 px-3 text base font-medium outline-none focus:border-[#808080] focus:shadow-md">
                         </div>
                     </div>
                     <div class="w-full px-3 sm:w-1/2">
                         <div class="mb-5 text-white">
                             <label for="time" class="mb-3 block text-xl font-medium">Waktu</label>
-                            <input type="time" name="time" id="time" class="w-full appearance-none rounded-lg border border-[#FFFFFF] bg-studio-temani py-3 px-3 text base font-medium outline-none focus:border-[#808080] focus:shadow-md">
+                            <input type="time" name="time" id="time"
+                                class="w-full appearance-none rounded-lg border border-[#FFFFFF] bg-studio-temani py-3 px-3 text base font-medium outline-none focus:border-[#808080] focus:shadow-md">
                         </div>
                     </div>
                 </div>
                 <div class="mb-5 text-white">
                     <label for="package" class="mb-3 block text-xl font-medium">Pilih Paket</label>
-                    <select name="package" id="package" class="w-full appearance-none rounded-lg border border-[#FFFFFF] bg-studio-temani py-3 px-3 text base font-medium outline-none focus:border-[#808080] focus:shadow-md">
+                    <select name="package" id="package"
+                        class="w-full appearance-none rounded-lg border border-[#FFFFFF] bg-studio-temani py-3 px-3 text base font-medium outline-none focus:border-[#808080] focus:shadow-md">
                         <option selected hidden>Silahkan Pilih Paket!</option>
                         <option value="Family Photo Session">Family Photo Session</option>
                         <option value="Self-Photo Session">Self-Photo Session</option>
@@ -110,12 +118,15 @@
                 </div>
                 <div class="mb-5 text-white">
                     <label for="email" class="mb-3 block text-xl font-medium">Nomor Telpon</label>
-                    <input type="text" name="phone" id="phone" class="w-full appearance-none rounded-lg border border-[#FFFFFF] bg-studio-temani py-3 px-3 text base font-medium outline-none focus:border-[#808080] focus:shadow-md">
+                    <input type="text" name="phone" id="phone"
+                        class="w-full appearance-none rounded-lg border border-[#FFFFFF] bg-studio-temani py-3 px-3 text base font-medium outline-none focus:border-[#808080] focus:shadow-md">
+                </div>
+                <div class="py-5" data-aos="flip-up" data-aos-duration="800">
+                    <button type="submit"
+                        class="bg-white hover:bg-gray-100 text-black font-quicksand font-bold py-2 px-4 rounded-lg">Pesan
+                        Sekarang</button>
                 </div>
             </form>
-            <div class="py-5" data-aos="flip-up" data-aos-duration="800">
-                <a href="/check"><button type="submit" class="bg-white hover:bg-gray-100 text-black font-quicksand font-bold py-2 px-4 rounded-lg">Pesan Sekarang</button></a>
-            </div>
         </div>
     </section>
 @endsection

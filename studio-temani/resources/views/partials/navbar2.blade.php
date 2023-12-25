@@ -1,7 +1,7 @@
 <nav class="bg-white p-3">
     <div class="flex items-center justify-between pr-[31rem]">
         <div class="w-36 ml-5">
-            <img src="assets/img/logo.png" alt="Studio Temani">
+            <img src="{{ asset('assets/img/logo.png') }}" alt="Studio Temani">
         </div>
 
         <div class="flex items-center gap-8 font-quicksand">

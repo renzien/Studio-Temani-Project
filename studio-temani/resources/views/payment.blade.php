@@ -14,6 +14,9 @@
         @include('partials.invoice')
         <div class="font-quicksand text-center">
             <h1 class="font-bold text-2xl">Scan QR Here</h1>
+            <div class="w-2/3 mt-10 flex m-25 ">
+                <img src="assets/img/qr-code.png" alt="QR Code">
+            </div>
         </div>
     </section>
 @endsection

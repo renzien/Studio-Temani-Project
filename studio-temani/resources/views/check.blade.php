@@ -18,24 +18,24 @@
             <div class="grid grid-rows-4">
                 <div class="flex flex-row py-15">
                     <input type="radio" name="qris" id="">
-                    <img class="w-1/2 ml-10" src="assets/img/QRIS.png" alt="logo pembayaran">
+                    <img class="w-1/2 ml-10" src="{{ asset('assets/img/QRIS.png') }}" alt="logo pembayaran">
                 </div>
                 <div class="flex flex-row py-10">
                     <input type="radio" name="bri" id="">
-                    <img class="w-1/2 ml-10 h-20" src="assets/img/BRI.png" alt="logo pembayaran">
+                    <img class="w-1/2 ml-10 h-20" src="{{ asset('assets/img/BRI.png') }}" alt="logo pembayaran">
                 </div>
                 <div class="flex flex-row py-10">
                     <input type="radio" name="dana" id="">
-                    <img class="w-1/2 ml-10 h-20" src="assets/img/DANA.png" alt="logo pembayaran">
+                    <img class="w-1/2 ml-10 h-20" src="{{ asset('assets/img/DANA.png') }}" alt="logo pembayaran">
                 </div>
                 <div class="flex flex-row py-10">
                     <input type="radio" name="bca" id="">
-                    <img class="w-1/2 px-5" src="assets/img/BCA.png" alt="logo pembayaran">
+                    <img class="w-1/2 px-5" src="{{ asset('assets/img/BCA.png') }}" alt="logo pembayaran">
                 </div>
             </div>
         </div>
     </section>
     <section class="flex items-end justify-end pr-72.5 pt-10 pb-5">
-        <a href="/payment"><button class="bg-slate-900 hover:bg-black text-white font-quicksand font-bold py-2 px-4 mr-5 rounded-lg">Selanjutnya</button></a>
+        <a href=""><button class="bg-slate-900 hover:bg-black text-white font-quicksand font-bold py-2 px-4 mr-5 rounded-lg">Selanjutnya</button></a>
     </section>
 @endsection

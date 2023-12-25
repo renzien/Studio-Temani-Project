@@ -64,7 +64,7 @@
                         <div class="card-content">
                             <div class="card-body">
                                 <!-- File uploader with image preview -->
-                                <input type="file" class="image-preview-filepond" />
+                                <input type="file" name="photo" id="photo" class="image-preview-filepond" />
                             </div>
                         </div>
                     </div>

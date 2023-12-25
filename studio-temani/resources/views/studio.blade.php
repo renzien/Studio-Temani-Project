@@ -109,37 +109,72 @@
         <div class="flex flex-col items-center">
             <div class="border-b border-white w-1/6 mt-2 mb-5"></div>
         </div>
-        <div class="flex items-center justify-center pb-15 mt-10 gap-8 pr-15 pl-15">
-            <div class="max-w-sm w-1/3 lg:max-w-full lg:flex" data-aos="fade-left" data-aos-duration="1200">
-                <div class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-gray-400 bg-white rounded-b-none rounded-xl p-4 flex flex-col justify-between leading-normal">
-                    <div class="mb-8 font-quicksand">
-                        <p class="text-sm text-black flex items-center">
-                            Testimonial
-                        </p>
-                        <h2 class="text-black font-bold text-xl mb-2">Studio ini Keren!</h2>
-                        <p class="text-black text-base text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad facilis tempore iste, mollitia officiis officia laboriosam ipsam ducimus magnam dolorem perspiciatis velit totam eaque, neque atque. Quod ad error at.</p>
+        <div class="flex items-center justify-center mt-10 gap-8 pr-15 pl-15">
+            <div class="owl-carousel">
+                <div class="mx-10" data-aos="fade-left" data-aos-duration="1200">
+                    <div class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-gray-400 bg-white rounded-b-none rounded-xl p-4 flex flex-col justify-between leading-normal">
+                        <div class="mb-8 font-quicksand">
+                            <p class="text-sm text-black flex items-center">
+                                Testimonial
+                            </p>
+                            <h2 class="text-black font-bold text-xl mb-2">Studio ini Keren!</h2>
+                            <p class="text-black text-base text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad facilis tempore iste, mollitia officiis officia laboriosam ipsam ducimus magnam dolorem perspiciatis velit totam eaque, neque atque. Quod ad error at.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="max-w-sm w-1/3 lg:max-w-full lg:flex" data-aos="fade-left" data-aos-duration="1600">
-                <div class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-gray-400 bg-white rounded-b-none rounded-xl p-4 flex flex-col justify-between leading-normal">
-                    <div class="mb-8 font-quicksand">
-                        <p class="text-sm text-black flex items-center">
-                            Testimonial
-                        </p>
-                        <h2 class="text-black font-bold text-xl mb-2">Studio ini Keren!</h2>
-                        <p class="text-black text-base text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad facilis tempore iste, mollitia officiis officia laboriosam ipsam ducimus magnam dolorem perspiciatis velit totam eaque, neque atque. Quod ad error at.</p>
+                <div class="mx-10" data-aos="fade-left" data-aos-duration="1600">
+                    <div class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-gray-400 bg-white rounded-b-none rounded-xl p-4 flex flex-col justify-between leading-normal">
+                        <div class="mb-8 font-quicksand">
+                            <p class="text-sm text-black flex items-center">
+                                Testimonial
+                            </p>
+                            <h2 class="text-black font-bold text-xl mb-2">Studio ini Keren!</h2>
+                            <p class="text-black text-base text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad facilis tempore iste, mollitia officiis officia laboriosam ipsam ducimus magnam dolorem perspiciatis velit totam eaque, neque atque. Quod ad error at.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="max-w-sm w-1/3 lg:max-w-full lg:flex" data-aos="fade-left" data-aos-duration="2000">
-                <div class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-gray-400 bg-white rounded-b-none rounded-xl p-4 flex flex-col justify-between leading-normal">
-                    <div class="mb-8 font-quicksand">
-                        <p class="text-sm text-black flex items-center">
-                            Testimonial
-                        </p>
-                        <h2 class="text-black font-bold text-xl mb-2">Studio ini Keren!</h2>
-                        <p class="text-black text-base text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad facilis tempore iste, mollitia officiis officia laboriosam ipsam ducimus magnam dolorem perspiciatis velit totam eaque, neque atque. Quod ad error at.</p>
+                <div class="mx-10" data-aos="fade-left" data-aos-duration="2000">
+                    <div class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-gray-400 bg-white rounded-b-none rounded-xl p-4 flex flex-col justify-between leading-normal">
+                        <div class="mb-8 font-quicksand">
+                            <p class="text-sm text-black flex items-center">
+                                Testimonial
+                            </p>
+                            <h2 class="text-black font-bold text-xl mb-2">Studio ini Keren!</h2>
+                            <p class="text-black text-base text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad facilis tempore iste, mollitia officiis officia laboriosam ipsam ducimus magnam dolorem perspiciatis velit totam eaque, neque atque. Quod ad error at.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mx-10" data-aos="fade-left" data-aos-duration="2000">
+                    <div class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-gray-400 bg-white rounded-b-none rounded-xl p-4 flex flex-col justify-between leading-normal">
+                        <div class="mb-8 font-quicksand">
+                            <p class="text-sm text-black flex items-center">
+                                Testimonial
+                            </p>
+                            <h2 class="text-black font-bold text-xl mb-2">Studio ini Keren!</h2>
+                            <p class="text-black text-base text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad facilis tempore iste, mollitia officiis officia laboriosam ipsam ducimus magnam dolorem perspiciatis velit totam eaque, neque atque. Quod ad error at.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mx-10" data-aos="fade-left" data-aos-duration="2000">
+                    <div class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-gray-400 bg-white rounded-b-none rounded-xl p-4 flex flex-col justify-between leading-normal">
+                        <div class="mb-8 font-quicksand">
+                            <p class="text-sm text-black flex items-center">
+                                Testimonial
+                            </p>
+                            <h2 class="text-black font-bold text-xl mb-2">Studio ini Keren!</h2>
+                            <p class="text-black text-base text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad facilis tempore iste, mollitia officiis officia laboriosam ipsam ducimus magnam dolorem perspiciatis velit totam eaque, neque atque. Quod ad error at.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mx-10" data-aos="fade-left" data-aos-duration="2000">
+                    <div class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-gray-400 bg-white rounded-b-none rounded-xl p-4 flex flex-col justify-between leading-normal">
+                        <div class="mb-8 font-quicksand">
+                            <p class="text-sm text-black flex items-center">
+                                Testimonial
+                            </p>
+                            <h2 class="text-black font-bold text-xl mb-2">Studio ini Keren!</h2>
+                            <p class="text-black text-base text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad facilis tempore iste, mollitia officiis officia laboriosam ipsam ducimus magnam dolorem perspiciatis velit totam eaque, neque atque. Quod ad error at.</p>
+                        </div>
                     </div>
                 </div>
             </div>

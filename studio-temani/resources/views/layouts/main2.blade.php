@@ -11,6 +11,11 @@
     {{-- Remix Icons --}}
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 
+    {{-- Owl Carousel --}}
+    <link rel="stylesheet" href="assets/css/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="assets/css/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl-carousel/owl.theme.default.min.css">
+
     {{-- AOS --}}
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -31,6 +36,16 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
+</script>
+{{-- jQuery --}}
+<script src="assets/js/jquery/jquery-3.7.1.min.js"></script>
+
+{{-- Owl Carousel --}}
+<script src="assets/js/owl-carousel/owl.carousel.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $(".owl-carousel").owlCarousel();
+    });
 </script>
 
 </html>

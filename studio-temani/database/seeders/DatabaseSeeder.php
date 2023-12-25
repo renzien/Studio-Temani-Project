@@ -11,6 +11,7 @@ use App\Models\Studio;
 use App\Models\Pricelist;
 use App\Models\Contact;
 use App\Models\PricelistHome;
+use App\Models\Book;
 use App\Models\CreaSpace;
 use App\Models\SelfSession;
 use App\Models\FamilyPhoto;
@@ -178,6 +179,17 @@ class DatabaseSeeder extends Seeder
             'title' => 'Sesi Foto Creative Space',
             'descpack' => 'Sesi Foto Creative Space, merupakan foto sesi dengan foto creative space yang bersangkutan dengan harga yang sangat amat terjangkau. Dengan harga yang terjangkau, kalian bisa mendapatkan 2 Mobil Purrarri untuk 1 - 2 Jam, dan 2 Mobil Purrarri untuk 3 - 4 Jam.',
             'photo' => 'bg-hero-2.jpg'
+        ]);
+
+        Book::create([
+            'fullname' => 'Renzien',
+            'lastname' => 'Ishikawa',
+            'email' => 'renzien10@gmail.com',
+            'guest' => '4',
+            'date' => '2021-10-10',
+            'time' => '10:00:00',
+            'package' => 'Sesi Foto Keluarga',
+            'phone' => '081234567890'
         ]);
     }
 }
